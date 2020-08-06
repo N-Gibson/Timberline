@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Nav = () => {
   return (
     <header>
-      <img src="../../resources/timberline-const.png"/>
+      <img id="timberline_logo" src="../../resources/timberline-const.png"/>
       <Link to="/about">
         <button id="about_nav_button" className="nav_button">About</button>
       </Link>
@@ -14,7 +14,7 @@ export const Nav = () => {
       <Link to="/contact-us">
         <button id="contact_us_nav_button" className="nav_button">Contact Us</button>
       </Link>
-      <img src="../../resources/25+_timberline.png"/>
+      <img id="25+_logo" src="../../resources/25+_timberline.png"/>
     </header>
   )
 }
