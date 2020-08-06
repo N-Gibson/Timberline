@@ -6,13 +6,13 @@ export const Nav = () => {
     <header>
       <img src="../../resources/timberline-const.png"/>
       <Link to="/about">
-        <button className="">About</button>
+        <button className="about_nav_button">About</button>
       </Link>
       <Link to="/projects">
-        <button className="">Projects</button>
+        <button className="projects_nav_button">Projects</button>
       </Link>
       <Link to="/contact-us">
-        <button className="">Contact Us</button>
+        <button className="contact_us_nav_button">Contact Us</button>
       </Link>
       <img src="../../resources/25+_timberline.png"/>
     </header>
