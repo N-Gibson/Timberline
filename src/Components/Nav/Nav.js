@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <header>
       <Link to="/">
-        <img id="timberline_logo" src="../../resources/timberline-const.png"/>
+        <img id="timberline_logo" src="../../../assets/timberline-const.png"/>
       </Link>
       <Link to="/about">
         <button id="about_nav_button" className="nav_button">About</button>
@@ -17,7 +17,7 @@ const Nav = () => {
         <button id="contact_us_nav_button" className="nav_button">Contact Us</button>
       </Link>
       <Link to="history">
-        <img id="25+_logo" src="../../resources/25+_timberline.png"/>
+        <img id="logo_25" src="../../../assets/25+_timberline.png"/>
       </Link>
     </header>
   )
