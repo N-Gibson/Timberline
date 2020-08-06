@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const Nav = () => {
+const Nav = () => {
   return (
     <header>
       <img id="timberline_logo" src="../../resources/timberline-const.png"/>
@@ -18,3 +18,5 @@ export const Nav = () => {
     </header>
   )
 }
+
+export default Nav;
