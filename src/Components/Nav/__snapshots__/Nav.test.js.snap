@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav Nav component should match the snapshot 1`] = `
+<header>
+  <Link
+    to="/"
+  >
+    <img
+      alt="timberline logo"
+      id="timberline_logo"
+      src="timberline-const.png"
+    />
+  </Link>
+  <Link
+    to="/about"
+  >
+    <button
+      className="nav_button"
+      id="about_nav_button"
+    >
+      About
+    </button>
+  </Link>
+  <Link
+    to="/projects"
+  >
+    <button
+      className="nav_button"
+      id="projects_nav_button"
+    >
+      Projects
+    </button>
+  </Link>
+  <Link
+    to="/contact-us"
+  >
+    <button
+      className="nav_button"
+      id="contact_us_nav_button"
+    >
+      Contact Us
+    </button>
+  </Link>
+  <Link
+    to="history"
+  >
+    <img
+      alt="logo"
+      id="logo_25"
+      src="25+_timberline.png"
+    />
+  </Link>
+</header>
+`;
