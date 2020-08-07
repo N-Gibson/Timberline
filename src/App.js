@@ -7,11 +7,11 @@ import { Footer } from '../src/Components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
+    <main className="App">
+      <Nav active="home"/>
       <Route exact path="/" render={() => <Home />}/>
       <Footer />
-    </div>
+    </main>
   );
 }
 
