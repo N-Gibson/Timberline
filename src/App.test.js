@@ -6,6 +6,6 @@ describe('App', () => {
   const wrapper = shallow(<App />);
 
   it('App component should match the snapshot', () => {
-    expect(true).toEqual(true);
+    expect(wrapper).toMatchSnapshot();
   });
 });

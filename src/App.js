@@ -4,9 +4,9 @@ import { Nav } from '../src/Components/Nav/Nav';
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-    </div>
+    <main className="App">
+      <Nav active="home"/>
+    </main>
   );
 }
 
