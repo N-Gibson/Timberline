@@ -53,7 +53,7 @@ export class Home extends Component {
         </div>
         <div className="bottom_main">
           <h2>Meet the Owner</h2>
-          <p>Stephen Gibson, owner and founder of Timberline Inc. has been working in the Santa Fe community for over 35 years and has received 11 awards in the Santa Fe area Home Builders Assocation's - A Parade of Homes. Steve's passion is crafting quality solutions for your construction needs.</p>
+          <p>Stephen Gibson, owner and founder of Timberline Inc. has been working in the Santa Fe community for over 35 years and has received 11 awards in the Santa Fe area Home Builders Association's - A Parade of Homes. Steve's passion is crafting quality solutions for your construction needs.</p>
           <img src={profile}/>
         </div>
       </section>
