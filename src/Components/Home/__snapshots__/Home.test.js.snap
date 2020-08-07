@@ -86,6 +86,7 @@ exports[`Home Home component should match snapshot 1`] = `
       </p>
     </div>
     <img
+      alt="house in valley"
       src="Purple_Aster.jpg"
     />
   </div>
@@ -99,6 +100,7 @@ exports[`Home Home component should match snapshot 1`] = `
       Stephen Gibson, owner and founder of Timberline Inc. has been working in the Santa Fe community for over 35 years and has received 11 awards in the Santa Fe area Home Builders Association's - A Parade of Homes. Steve's passion is crafting quality solutions for your construction needs.
     </p>
     <img
+      alt="timberline owner"
       src="profile.jpg"
     />
   </div>
