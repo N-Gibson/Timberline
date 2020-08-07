@@ -8,13 +8,12 @@ export class Home extends Component {
   constructor() {
     super()
     this.state = {
-      showNav: false,
       showThumbnails: false,
       showFullscreenButton: false,
-      useBrowserFullscreen: true,
       showPlayButton: false,
       showBullets: true,
       autoPlay: true,
+      slideInterval: 5000,
       images: [
         {
           original: venadoFront,
@@ -37,13 +36,12 @@ export class Home extends Component {
       <section className="home">
         <ImageGallery 
           items={this.state.images} 
-          showNav={this.state.showNav}
           showThumbnails={this.state.showThumbnails}
           showFullscreenButton={this.state.showFullscreenButton}
-          useBrowserFullscreen={this.state.useBrowserFullscreen}
           showPlayButton={this.state.showPlayButton}
           showBullets={this.state.showBullets}
           autoPlay={this.state.autoPlay}
+          slideInterval={this.state.slideInterval}
         />
       </section>
     )
