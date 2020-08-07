@@ -6,10 +6,10 @@ import { Home } from '../src/Components/Home/Home';
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
+    <main className="App">
+      <Nav active="home"/>
       <Route exact path="/" render={() => <Home />}/>
-    </div>
+    </main>
   );
 }
 
