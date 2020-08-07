@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
 import venadoFront from '../../assets/Venado_front.jpg';
 import purpleAster from '../../assets/Purple_Aster.jpg';
+import "react-image-gallery/styles/css/image-gallery.css";
 
 export class Home extends Component {
   constructor() {
@@ -10,18 +11,20 @@ export class Home extends Component {
       showNav: false,
       showThumbnails: false,
       showFullscreenButton: false,
-      useBrowserFullscreen: false,
+      useBrowserFullscreen: true,
       showPlayButton: false,
       showBullets: true,
       autoPlay: true,
       images: [
         {
           original: venadoFront,
+          thumbnail: venadoFront,
           originalClass: 'venado_gallery_image',
           originalAlt: 'Custom home in Santa Fe, New Mexico. Rear view of home.',
         },
         {
           original: purpleAster,
+          thumbnail: purpleAster,
           originalClass: 'purpleAster_gallery_image',
           originalAlt: 'Custom home in Santa Fe, New Mexico. Mountain views.',
         },
