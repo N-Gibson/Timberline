@@ -7,5 +7,10 @@ exports[`App App component should match the snapshot 1`] = `
   <Nav
     active="home"
   />
+  <Route
+    exact={true}
+    path="/"
+    render={[Function]}
+  />
 </main>
 `;
