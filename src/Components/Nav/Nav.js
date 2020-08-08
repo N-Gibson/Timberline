@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.scss';
-// import timberline_logo from '../../assets/timberline-const.png';
-import timberline_thumbnail from '../../assets/timberline-const-thumbnail.png';
+import timberline_logo from '../../assets/timberline-const.png';
 import logo_25 from '../../assets/25+_timberline_test.png';
 
 export const Nav = ({ active }) => {
@@ -12,7 +11,7 @@ export const Nav = ({ active }) => {
   return (
     <header>
       <Link to="/">
-        <img id="timberline_logo" src={timberline_thumbnail} alt="timberline logo"/>
+        <img id="timberline_logo" src={timberline_logo} alt="timberline logo"/>
       </Link>
       <section id="nav_buttons_container">
         <Link to="/about">
