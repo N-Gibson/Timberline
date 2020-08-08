@@ -72,37 +72,54 @@ exports[`Home Home component should match snapshot 1`] = `
     useBrowserFullscreen={true}
     useTranslate3D={true}
   />
-  <div
-    className="center_main"
+  <section
+    className="section_container"
   >
-    <div
-      className="rrr_content"
+    <article
+      className="article_container"
     >
-      <h2>
+      <h2
+        className="article_header"
+      >
         Raise, Repair, Remodel
       </h2>
-      <p>
+      <p
+        className="article_text"
+      >
         Timberline Inc. is a locally owned and operated business in Santa Fe, New Mexico and surrounding areas since 1992. Specializing in New Mexican style builds and remodels, Timberline can do it all. From the preservation of original homes dating back to the mid 1800's to brand new homes and everything in between! Award winning Timberline Inc. can help with repairs, remodels or raising a new project from the ground up.
       </p>
-    </div>
+    </article>
     <img
       alt="house in valley"
+      className="section_img"
+      id="rrr_img"
       src="Purple_Aster.jpg"
     />
-  </div>
-  <div
-    className="bottom_main"
+  </section>
+  <section
+    className="section_container"
+    id="home_bottom_main"
   >
-    <h2>
-      Meet the Owner
-    </h2>
-    <p>
-      Stephen Gibson, owner and founder of Timberline Inc. has been working in the Santa Fe community for over 35 years and has received 11 awards in the Santa Fe area Home Builders Association's - A Parade of Homes. Steve's passion is crafting quality solutions for your construction needs.
-    </p>
     <img
       alt="timberline owner"
+      className="section_img"
+      id="meet_owner_img"
       src="profile.jpg"
     />
-  </div>
+    <article
+      className="article_container"
+    >
+      <h2
+        className="article_header"
+      >
+        Meet the Owner
+      </h2>
+      <p
+        className="article_text"
+      >
+        Stephen Gibson, owner and founder of Timberline Inc. has been working in the Santa Fe community for over 35 years and has received 11 awards in the Santa Fe area Home Builders Association's - A Parade of Homes. Steve's passion is crafting quality solutions for your construction needs.
+      </p>
+    </article>
+  </section>
 </section>
 `;
