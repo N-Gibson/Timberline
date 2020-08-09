@@ -8,7 +8,7 @@ exports[`Nav Nav component should match the snapshot 1`] = `
     <img
       alt="timberline logo"
       id="timberline_logo"
-      src="timberline-const-thumbnail.png"
+      src="timberline-const.png"
     />
   </Link>
   <section
