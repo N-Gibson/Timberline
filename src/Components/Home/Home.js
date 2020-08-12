@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
 import venadoFront from '../../assets/Venado_front.jpg';
 import purpleAster from '../../assets/Purple_Aster.jpg';
-import venadoPorch from '../../assets/Venado_Porch.jpg';
+import venadoPorch from '../../assets/Venado_Porch.jpg'
 import venadoFrontDoor from '../../assets/Venado_Front_Door.jpg';
 import venadoMasterBed from '../../assets/Venado_Master_Bed.jpg';
 import profile from '../../assets/profile.jpg';
