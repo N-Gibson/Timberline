@@ -10,12 +10,12 @@ exports[`Footer Footer component should match snapshot 1`] = `
   <p
     className="footer_content"
   >
-    (505)-470-5446
+    Phone: (505)-470-5446
   </p>
-  <p
-    className="footer_content"
+  <a
+    href="mailto: timberlineinc.steve@gmail.com"
   >
-    timberlineinc.steve@gmail.com
-  </p>
+    Email: timberlineinc.steve@gmal.com
+  </a>
 </footer>
 `;

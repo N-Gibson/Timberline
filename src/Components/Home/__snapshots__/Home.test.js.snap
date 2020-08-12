@@ -19,14 +19,22 @@ exports[`Home Home component should match snapshot 1`] = `
         Object {
           "original": "Venado_front.jpg",
           "originalAlt": "Custom home in Santa Fe, New Mexico. Rear view of home.",
-          "originalClass": "venado_gallery_image",
-          "thumbnail": "Venado_front.jpg",
+          "originalClass": "venado_back_image",
         },
         Object {
-          "original": "Purple_Aster.jpg",
-          "originalAlt": "Custom home in Santa Fe, New Mexico. Mountain views.",
-          "originalClass": "purpleAster_gallery_image",
-          "thumbnail": "Purple_Aster.jpg",
+          "original": "Venado_Porch.jpg",
+          "originalAlt": "Porch view of custom home in Santa Fe, New Mexico.",
+          "originalClass": "venado_porch_img",
+        },
+        Object {
+          "original": "Venado_Front_Door.jpg",
+          "originalAlt": "Custom front door in Santa Fe, New Mexico home.",
+          "originalClass": "venado_front_door_img",
+        },
+        Object {
+          "original": "Venado_Master_Bed.jpg",
+          "originalAlt": "Master bedroom with plaster walls in custom Santa Fe, New Mexican custom home.",
+          "originalClass": "venado_master_bed_img",
         },
       ]
     }
@@ -74,6 +82,7 @@ exports[`Home Home component should match snapshot 1`] = `
   />
   <section
     className="section_container"
+    id="home_center_main"
   >
     <article
       className="article_container"
