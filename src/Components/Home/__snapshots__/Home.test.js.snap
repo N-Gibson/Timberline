@@ -22,12 +22,12 @@ exports[`Home Home component should match snapshot 1`] = `
           "originalClass": "venado_back_image",
         },
         Object {
-          "original": "Venado_Porch.jpg",
+          "original": "Venado_Porch.JPG",
           "originalAlt": "Porch view of custom home in Santa Fe, New Mexico.",
           "originalClass": "venado_porch_img",
         },
         Object {
-          "original": "Venado_Front_Door.jpg",
+          "original": "Venado_Front_Door.JPG",
           "originalAlt": "Custom front door in Santa Fe, New Mexico home.",
           "originalClass": "venado_front_door_img",
         },
