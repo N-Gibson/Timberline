@@ -3,6 +3,7 @@
 exports[`Nav Nav component should match the snapshot 1`] = `
 <header>
   <Link
+    onClick={[Function]}
     to="/"
   >
     <img
@@ -20,6 +21,7 @@ exports[`Nav Nav component should match the snapshot 1`] = `
       <button
         className="nav_button"
         id="about_nav_button"
+        onClick={[Function]}
       >
         About
       </button>
@@ -30,6 +32,7 @@ exports[`Nav Nav component should match the snapshot 1`] = `
       <button
         className="nav_button"
         id="projects_nav_button"
+        onClick={[Function]}
       >
         Projects
       </button>
@@ -40,13 +43,15 @@ exports[`Nav Nav component should match the snapshot 1`] = `
       <button
         className="nav_button"
         id="contact_us_nav_button"
+        onClick={[Function]}
       >
         Contact Us
       </button>
     </Link>
   </section>
   <Link
-    to="history"
+    onClick={[Function]}
+    to="/history"
   >
     <img
       alt="logo"
