@@ -37,3 +37,9 @@
   font-size: 1.2em;
   margin-bottom: 10px;
 }
+
+.bucket_list_ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
