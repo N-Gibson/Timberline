@@ -12,9 +12,10 @@ export default function About() {
       <article className="about_article about_article_bucket_list">
         <h2 className="bucket_list_title">Bucket List</h2>
         <ul className="bucket_list_ul">
-          <li className="bucket_list_li">Work on a home from the 1800's √</li>
-          <li className="bucket_list_li">Build a cabin in Alaska</li>
-          <li className="bucket_list_li">Design and build a liveable tree house</li>
+          <li>Work on a home from the 1800's √</li>
+            {/* May want to find a check icon */}
+          <li>Build a cabin in Alaska</li>
+          <li>Design and build a liveable tree house </li>
         </ul>
       </article>
     </section>

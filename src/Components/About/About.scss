@@ -3,8 +3,9 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas:
-    'narrative bucket';
+  'narrative bucket';
   height: 75vh;
+  text-align: left;
 }
 
 .about_article {
@@ -13,21 +14,21 @@
   margin: 2em;
 }
 
+.about_article_text {
+  background-color: #C8AD96;
+  border-radius: 6px;
+  box-shadow: 10px 0px 20px 0px #00000040;
+  font-size: 1.25em;
+  line-height: 2;
+  padding: 2em;
+}
+
 .about_article_bucket_list {
   background-color: #C8AD96;
   border-radius: 6px;
   box-shadow: 10px 0px 20px 0px #00000040;
   font-size: 1.25em;
   grid-area: bucket;
-  line-height: 2;
-  padding: 2em;
-}
-
-.about_article_text {
-  background-color: #C8AD96;
-  border-radius: 6px;
-  box-shadow: 10px 0px 20px 0px #00000040;
-  font-size: 1.25em;
   line-height: 2;
   padding: 2em;
 }
