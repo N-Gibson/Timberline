@@ -24,20 +24,14 @@ exports[`About component Should match snapshot 1`] = `
     <ul
       className="bucket_list_ul"
     >
-      <li
-        className="bucket_list_li"
-      >
+      <li>
         Work on a home from the 1800's √
       </li>
-      <li
-        className="bucket_list_li"
-      >
+      <li>
         Build a cabin in Alaska
       </li>
-      <li
-        className="bucket_list_li"
-      >
-        Design and build a liveable tree house
+      <li>
+        Design and build a liveable tree house 
       </li>
     </ul>
   </article>
