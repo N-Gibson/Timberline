@@ -44,7 +44,7 @@ export const Nav = () => {
           </button>
         </Link>
       </section>
-      <Link to="history" onClick={() => setActive("history")}>
+      <Link to="/history" onClick={() => setActive("history")}>
         <img id="logo_25" src={logo_25} alt="logo" />
       </Link>
     </header>
