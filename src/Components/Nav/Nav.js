@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.scss";
 import timberline_logo from "../../assets/timberline-const.png";
-import logo_25 from "../../assets/25+_timberline_test.png";
+import logo_25 from "../../assets/25+_timberline.png";
 
 export const Nav = () => {
   const idleButton = "nav_button";
