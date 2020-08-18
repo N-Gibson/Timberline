@@ -4,14 +4,15 @@ import { Route } from "react-router-dom";
 import { Nav } from "../src/Components/Nav/Nav";
 import { Footer } from "../src/Components/Footer/Footer";
 import Home from "../src/Components/Home/Home";
-import About from "../src/Components/About/About";
+import History from "./Components/History/History";
 
 function App() {
   return (
     <main className="App">
       <Nav active="home" />
       <Route exact path="/" render={() => <Home />} />
-      <Route path="/about" render={() => <About />} />
+      <Route path="/about" render={() => <Home />} />
+      <Route path="/history" render={() => <History />} />
       <Footer />
     </main>
   );
