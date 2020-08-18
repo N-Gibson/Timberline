@@ -12,6 +12,8 @@ function App() {
       <Nav active="home" />
       <Route exact path="/" render={() => <Home />} />
       <Route path="/about" render={() => <Home />} />
+      <Route path="/projects" render={() => <Home />} />
+      <Route path="/contact-us" render={() => <Home />} />
       <Route path="/history" render={() => <History />} />
       <Footer />
     </main>
