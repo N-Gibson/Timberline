@@ -13,6 +13,7 @@ exports[`App App component should match the snapshot 1`] = `
     render={[Function]}
   />
   <Route
+    exact={true}
     path="/about"
     render={[Function]}
   />

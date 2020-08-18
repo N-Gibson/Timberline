@@ -1,5 +1,11 @@
 language: node_js
 node_js:
-  - "node"
+- node
 notifications:
   email: false
+deploy:
+  provider: heroku
+  api_key:
+    secure: l7/1RVsGzUuf6hbzXG2TQexCR/MUHBWJFKNoax0wyTzq1txbsKEdukksOtOaFtoNmLEGpUPu3UDgr7jykylnsGiWeE1slXKZCGqf7dl1Mg1uTPSMmcLc0KUjyLDXlU1sahjYZCtWDMrGZGwD0Mzbcvqo6iFlCyQ5ytknQvZFQ0701UezXUUWA6CnR5MEDQbRvDm+wljjWDzUfWobDOO5ceFbAGOA8CbGsh6lSeMwoTIarTr/Yaww3yi0ieXiJBTLiFtXYJm/RXZ0dy5nmmyqo98nNI+MeauUHhAAiAHLf5c13U9D+cKndObd5nmDn+z8HYRi7Mt2nAO/VqUly8En86sBseLn2RsIKWP9eN3HKxxlwoOKNF8goJ/KOKNFWVc8YEG7hkQADovnNgiE5K9bfvnmyIeGUpRO1SnLEAMySnfacbY97+oeNlVKmXhbE/Yc/Ha/djTLL45sMgyQJJffQpD9Qw3VyeSXQMEzA9gk1KO+iirFZo6HMcCSwPwvons26numdnohai8VaR6Dop5ep7rka5yQP05oDUtbSbP2UexoRORaB4TktC9NmFNpdo5IZYpuJEPon1Ni5ZLdrf6DlqqVm0cU0sEgaLpENHbaFINmoGdb8PBuF9Ui71e7hoPxufnVB1bTe3jaiO1xZyUAZyt1Pfgwc7qRV4dvksVBEhQ=
+  app: timberlineincsantafe
+  skip_cleanup: true
