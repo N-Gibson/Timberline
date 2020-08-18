@@ -51,7 +51,7 @@ exports[`Nav Nav component should match the snapshot 1`] = `
   </section>
   <Link
     onClick={[Function]}
-    to="history"
+    to="/history"
   >
     <img
       alt="logo"
