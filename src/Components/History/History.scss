@@ -1,10 +1,10 @@
-.about {
+.history {
   height: 75vh;
   display: flex;
   align-items: center;
 }
 
-.about_article {
+.history_article {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
@@ -14,7 +14,7 @@
   padding: 2em;
 }
 
-.about_article_text {
+.history_article_text {
   background-color: #c8ad96;
   padding: 2em;
   border-radius: 6px;
@@ -23,7 +23,7 @@
   box-shadow: 10px 0px 20px 0px #00000040;
 }
 
-.about_main_image {
+.history_main_image {
   width: 100%;
   border-radius: 6px;
   box-shadow: 10px 0px 20px 0px #00000040;
