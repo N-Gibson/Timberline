@@ -1,0 +1,30 @@
+.about {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+}
+
+.about_article {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 2em;
+  padding: 2em;
+}
+
+.about_article_text {
+  background-color: #c8ad96;
+  padding: 2em;
+  border-radius: 6px;
+  line-height: 2;
+  font-size: 1.25em;
+  box-shadow: 10px 0px 20px 0px #00000040;
+}
+
+.about_main_image {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 10px 0px 20px 0px #00000040;
+}
