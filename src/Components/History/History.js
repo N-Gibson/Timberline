@@ -14,7 +14,7 @@ export default function History() {
         <img
           className="about_main_image"
           src={Hallway}
-          alt="(change later when pic is available)"
+          alt="hallway in house"
         />
       </article>
     </section>
