@@ -1,13 +1,18 @@
 import React from 'react';
 import './Projects.scss';
 import purpleAster from '../../assets/Purple_Aster.jpg';
-import vendaoFront from '../../assets/Venado_front.jpg';
-import venadoPorch from '../../assets/Venado_Porch.jpg';
+import venadoFront from '../../assets/Venado_front.jpg';
+import venadoKitchen from '../../assets/Venado_Kitchen.jpg';
 
 export const Projects = () => {
   return (
     <section className="projects">
-      <img src={purpleAster}/>
+      <img id="purple_aster" src={purpleAster} />
+      <label for="purple_aster">Purple Aster Spec Home</label>
+      <img id="venado_front" src={venadoFront} />
+      <label for="venado_front">Venado Spec Home</label>
+      <img id="venado_kitchen" src={venadoKitchen}/>
+      <label for="venado_kitchen">Custom Kitchen Remodel</label>
     </section>
   )
 }
