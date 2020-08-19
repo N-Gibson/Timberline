@@ -6,6 +6,7 @@ import { Footer } from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import History from "./Components/History/History";
+import Projects from "./Components/Projects/Projects";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Nav active="home" />
       <Route exact path="/" render={() => <Home />} />
       <Route exact path="/about" render={() => <About />} />
-      <Route path="/projects" render={() => <Home />} />
+      <Route path="/projects" render={() => <Projects />} />
       <Route path="/contact-us" render={() => <Home />} />
       <Route path="/history" render={() => <History />} />
       <Footer />

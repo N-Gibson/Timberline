@@ -7,7 +7,9 @@ import venadoPorch from '../../assets/Venado_Porch.jpg';
 export const Projects = () => {
   return (
     <section className="projects">
-      <img src={purpleAster}>Purple Aster Spec Home</img>
+      <img src={purpleAster}/>
     </section>
   )
 }
+
+export default Projects;
