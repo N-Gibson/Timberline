@@ -4,15 +4,13 @@ import "./Nav.scss";
 import timberline_logo from "../../assets/timberline-const.png";
 import logo_25 from "../../assets/25+_timberline.png";
 
-export const Nav = () => {
+export const Nav = ({ active }) => {
   const idleButton = "nav_button";
   const activeButton = "nav_button active_button";
 
-  const [active, setActive] = useState("home");
-
   return (
     <header>
-      <Link to="/" onClick={() => setActive("home")}>
+      <Link to="/">
         <img id="timberline_logo" src={timberline_logo} alt="timberline logo" />
       </Link>
       <section id="nav_buttons_container">
@@ -20,7 +18,6 @@ export const Nav = () => {
           <button
             className={active === "about" ? activeButton : idleButton}
             id="about_nav_button"
-            onClick={() => setActive("about")}
           >
             About
           </button>
@@ -29,7 +26,6 @@ export const Nav = () => {
           <button
             className={active === "projects" ? activeButton : idleButton}
             id="projects_nav_button"
-            onClick={() => setActive("projects")}
           >
             Projects
           </button>
@@ -38,13 +34,12 @@ export const Nav = () => {
           <button
             className={active === "contact" ? activeButton : idleButton}
             id="contact_us_nav_button"
-            onClick={() => setActive("contact")}
           >
             Contact Us
           </button>
         </Link>
       </section>
-      <Link to="/about" onClick={() => setActive("history")}>
+      <Link to="/about">
         <img id="logo_25" src={logo_25} alt="logo" />
       </Link>
     </header>
