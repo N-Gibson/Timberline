@@ -10,13 +10,11 @@ import History from "./Components/History/History";
 function App() {
   return (
     <main className="App">
-      <Nav active="home" />
       <Route exact path="/" render={() => <Home />} />
       <Route exact path="/about" render={() => <About />} />
       <Route path="/projects" render={() => <Home />} />
       <Route path="/contact-us" render={() => <Home />} />
       <Route path="/history" render={() => <History />} />
-      <Footer />
     </main>
   );
 }
