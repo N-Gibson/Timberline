@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-import ImageGallery from "react-image-gallery";
+// import ImageGallery from "react-image-gallery";
+import Layout from "../Layout/Layout";
+import ContactForm from "../ContactForm/ContactForm";
+import { Link } from "react-router-dom";
 import venadoFront from "../../assets/Venado_front.jpg";
 import purpleAster from "../../assets/Purple_Aster.jpg";
 import venadoPorch from "../../assets/Venado_Porch.jpg";
@@ -49,55 +52,80 @@ export default class Home extends Component {
 
   render() {
     return (
-      <section className="home">
-        <ImageGallery
-          items={this.state.images}
-          showThumbnails={this.state.showThumbnails}
-          showFullscreenButton={this.state.showFullscreenButton}
-          showPlayButton={this.state.showPlayButton}
-          showBullets={this.state.showBullets}
-          autoPlay={this.state.autoPlay}
-          slideInterval={this.state.slideInterval}
-        />
-        <section id="home_center_main" className="section_container">
-          <article className="article_container">
-            <h2 className="article_header">Raise, Repair, Remodel</h2>
-            <p className="article_text">
-              Timberline Inc. is a locally owned and operated business in Santa
-              Fe, New Mexico and surrounding areas since 1992. Specializing in
-              New Mexican style builds and remodels, Timberline can do it all.
-              From the preservation of original homes dating back to the mid
-              1800's to brand new homes and everything in between! Award winning
-              Timberline Inc. can help with repairs, remodels or raising a new
-              project from the ground up.
-            </p>
-          </article>
-          <img
-            id="rrr_img"
-            className="section_img"
-            src={purpleAster}
-            alt="house in valley"
-          />
+      <Layout active="home">
+        <section className="home">
+          {/* <ImageGallery
+            items={this.state.images}
+            showThumbnails={this.state.showThumbnails}
+            showFullscreenButton={this.state.showFullscreenButton}
+            showPlayButton={this.state.showPlayButton}
+            showBullets={this.state.showBullets}
+            autoPlay={this.state.autoPlay}
+            slideInterval={this.state.slideInterval}
+          /> */}
+          <section className="banner">
+            <h3>Want a new home without moving?</h3>
+            <h2>Contact timberline for a free quote!</h2>
+            <Link to="/contact-us">
+              <button>Contact Us</button>
+            </Link>
+          </section>
+          <section id="home_center_main" className="section_container">
+            <article className="article_container">
+              <h2 className="article_header">Raise, Repair, Remodel</h2>
+              <p className="article_text">
+                Timberline Inc. is a locally owned and operated business in
+                Santa Fe, New Mexico and surrounding areas since 1992.
+                Specializing in New Mexican style builds and remodels,
+                Timberline can do it all. From the preservation of original
+                homes dating back to the mid 1800's to brand new homes and
+                everything in between! Award winning Timberline Inc. can help
+                with repairs, remodels or raising a new project from the ground
+                up.
+              </p>
+            </article>
+            <img
+              id="rrr_img"
+              className="section_img"
+              src={purpleAster}
+              alt="house in valley"
+            />
+          </section>
+          <section className="section_container" id="home_bottom_main">
+            <img
+              id="meet_owner_img"
+              className="section_img"
+              src={profile}
+              alt="timberline owner"
+            />
+            <article className="article_container">
+              <h2 className="article_header">Meet the Owner</h2>
+              <p className="article_text">
+                Stephen Gibson, owner and founder of Timberline Inc. has been
+                working in the Santa Fe community for over 35 years and has
+                received 11 awards in the Santa Fe area Home Builders
+                Association's - A Parade of Homes. Steve's passion is crafting
+                quality solutions for your construction needs.
+              </p>
+            </article>
+          </section>
+          <section className="home_contact_form">
+            <article>
+              <h3>Interested in remodeling your home?</h3>
+              <h2>Get in touch with us for a free quote!</h2>
+              <p>
+                Eiusmod quis adipisicing irure laborum sint excepteur aute
+                laboris aute elit incididunt cupidatat nulla proident. Cillum
+                officia cillum do excepteur non laboris cupidatat enim tempor
+                est fugiat cupidatat anim. Cupidatat labore nulla pariatur qui.
+                Dolor adipisicing est consequat et non officia proident minim
+                duis sunt qui voluptate.
+              </p>
+            </article>
+            <ContactForm />
+          </section>
         </section>
-        <section className="section_container" id="home_bottom_main">
-          <img
-            id="meet_owner_img"
-            className="section_img"
-            src={profile}
-            alt="timberline owner"
-          />
-          <article className="article_container">
-            <h2 className="article_header">Meet the Owner</h2>
-            <p className="article_text">
-              Stephen Gibson, owner and founder of Timberline Inc. has been
-              working in the Santa Fe community for over 35 years and has
-              received 11 awards in the Santa Fe area Home Builders
-              Association's - A Parade of Homes. Steve's passion is crafting
-              quality solutions for your construction needs.
-            </p>
-          </article>
-        </section>
-      </section>
+      </Layout>
     );
   }
 }
