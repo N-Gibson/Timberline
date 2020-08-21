@@ -8,11 +8,11 @@ export const Projects = () => {
   return (
     <section className="projects">
       <img id="purple_aster" src={purpleAster} />
-      <label for="purple_aster">Purple Aster Spec Home</label>
+      <label htmlFor="purple_aster">Purple Aster Spec Home</label>
       <img id="venado_front" src={venadoFront} />
-      <label for="venado_front">Venado Spec Home</label>
+      <label htmlFor="venado_front">Venado Spec Home</label>
       <img id="venado_kitchen" src={venadoKitchen}/>
-      <label for="venado_kitchen">Custom Kitchen Remodel</label>
+      <label htmlFor="venado_kitchen">Custom Kitchen Remodel</label>
     </section>
   )
 }
