@@ -6,15 +6,16 @@
 }
 
 .banner {
-  background-image: url("../../assets/stock_home.jpg");
+  background-image: url("../../assets/Venado_front.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 25rem;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100vw;
 }
 
 .banner * {
