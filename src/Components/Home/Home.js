@@ -109,7 +109,7 @@ export default class Home extends Component {
               </p>
             </article>
           </section>
-          <section className="home_contact_form">
+          {/* <section className="home_contact_form">
             <article>
               <h3>Interested in remodeling your home?</h3>
               <h2>Get in touch with us for a free quote!</h2>
@@ -123,7 +123,7 @@ export default class Home extends Component {
               </p>
             </article>
             <ContactForm />
-          </section>
+          </section> */}
         </section>
       </Layout>
     );
