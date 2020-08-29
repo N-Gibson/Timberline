@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Projects Component Projects component should match snapshot 1`] = `
+<Layout
+  active="projects"
+>
+  <section
+    className="projects"
+  >
+    <Link
+      to="/projects/1"
+    >
+      <div
+        className="project_container"
+      >
+        <img
+          className="projects_photos"
+          id="purple_aster"
+          src="Purple_Aster.jpg"
+        />
+        <label
+          htmlFor="purple_aster"
+        >
+          Purple Aster Spec Home
+        </label>
+      </div>
+    </Link>
+    <Link
+      to="/projects/2"
+    >
+      <div
+        className="project_container"
+      >
+        <img
+          className="projects_photos"
+          id="venado_front"
+          src="Venado_front.jpg"
+        />
+        <label
+          htmlFor="venado_front"
+        >
+          Venado Spec Home
+        </label>
+      </div>
+    </Link>
+    <Link
+      to="/projects/3"
+    >
+      <div
+        className="project_container"
+      >
+        <img
+          className="projects_photos"
+          id="venado_kitchen"
+          src="Venado_Kitchen.jpg"
+        />
+        <label
+          htmlFor="venado_kitchen"
+        >
+          Custom Kitchen Remodel
+        </label>
+      </div>
+    </Link>
+  </section>
+</Layout>
+`;
