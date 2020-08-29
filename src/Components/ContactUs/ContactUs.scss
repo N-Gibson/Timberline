@@ -1,0 +1,28 @@
+.contactUs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 1rem;
+  column-gap: 1rem;
+  box-shadow: 6px -6px 20px #00000040;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  margin: 1rem;
+}
+
+.contactUs article {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.contactUs h3 {
+  text-transform: uppercase;
+}
+
+.contactUs h2 {
+  text-transform: capitalize;
+}
