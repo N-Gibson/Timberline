@@ -5,11 +5,15 @@
   padding: 5em 0;
 }
 
+.banner_container {
+  padding-top: 150px;
+}
+
 .banner {
   background-image: url("../../assets/Venado_front.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  height: 80vh;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -69,35 +73,6 @@
   line-height: 2;
   font-size: 1.25em;
 }
-
-// .home_contact_form {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   align-items: center;
-//   padding: 1rem;
-//   column-gap: 1rem;
-//   box-shadow: 6px -6px 20px #00000040;
-//   background-color: #e0e0e0;
-//   border-radius: 6px;
-//   margin: 1rem;
-// }
-
-// .home_contact_form article {
-//   display: flex;
-//   flex-direction: column;
-//   justify-self: center;
-//   justify-content: space-evenly;
-//   align-items: center;
-//   height: 100%;
-// }
-
-// .home_contact_form h3 {
-//   text-transform: uppercase;
-// }
-
-// .home_contact_form h2 {
-//   text-transform: capitalize;
-// }
 
 #home_center_main {
   background-color: #e0e0e0;
