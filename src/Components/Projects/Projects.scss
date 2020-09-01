@@ -3,16 +3,19 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
   height: 90vh;
-  padding: 8rem 1rem;
+  padding: 180px 1rem;
+  justify-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .projects_photos {
   height: 200px;
   margin: 5px;
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.05);
-    }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
 }
 
 .project_container {

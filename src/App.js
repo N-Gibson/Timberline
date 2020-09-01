@@ -13,7 +13,6 @@ function App() {
       <Route exact path="/" render={() => <Home />} />
       <Route exact path="/about" render={() => <About />} />
       <Route path="/projects" render={() => <Projects />} />
-      {/* <Route path="/projects/:id" render={() => <Project/>} /> */}
       <Route path="/contact-us" render={() => <ContactUs />} />
       <Route path="/history" render={() => <History />} />
     </main>
