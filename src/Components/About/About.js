@@ -8,8 +8,10 @@ export default function About() {
   return (
     <Layout active="about">
       <section className="about_main">
-        <div id="about_banner">
-          <h2>About Us</h2>
+        <div className="about_banner_container">
+          <div id="about_banner">
+            <h2>About Us</h2>
+          </div>
         </div>
         <section className="about">
           <article className="about_article" id="about_article">

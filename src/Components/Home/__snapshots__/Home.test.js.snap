@@ -7,23 +7,27 @@ exports[`Home Home component should match snapshot 1`] = `
   <section
     className="home"
   >
-    <section
-      className="banner"
+    <div
+      className="banner_container"
     >
-      <h3>
-        Want a new home without moving?
-      </h3>
-      <h2>
-        Contact timberline for a free quote!
-      </h2>
-      <Link
-        to="/contact-us"
+      <div
+        className="banner"
       >
-        <button>
-          Contact Us
-        </button>
-      </Link>
-    </section>
+        <h3>
+          Want a new home without moving?
+        </h3>
+        <h2>
+          Contact timberline for a free quote!
+        </h2>
+        <Link
+          to="/contact-us"
+        >
+          <button>
+            Contact Us
+          </button>
+        </Link>
+      </div>
+    </div>
     <section
       className="section_container"
       id="home_center_main"
@@ -73,22 +77,6 @@ exports[`Home Home component should match snapshot 1`] = `
           Stephen Gibson, owner and founder of Timberline Inc. has been working in the Santa Fe community for over 35 years and has received 11 awards in the Santa Fe area Home Builders Association's - A Parade of Homes. Steve's passion is crafting quality solutions for your construction needs.
         </p>
       </article>
-    </section>
-    <section
-      className="home_contact_form"
-    >
-      <article>
-        <h3>
-          Interested in remodeling your home?
-        </h3>
-        <h2>
-          Get in touch with us for a free quote!
-        </h2>
-        <p>
-          Eiusmod quis adipisicing irure laborum sint excepteur aute laboris aute elit incididunt cupidatat nulla proident. Cillum officia cillum do excepteur non laboris cupidatat enim tempor est fugiat cupidatat anim. Cupidatat labore nulla pariatur qui. Dolor adipisicing est consequat et non officia proident minim duis sunt qui voluptate.
-        </p>
-      </article>
-      <ContactForm />
     </section>
   </section>
 </Layout>

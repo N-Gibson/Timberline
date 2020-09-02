@@ -54,22 +54,15 @@ export default class Home extends Component {
     return (
       <Layout active="home">
         <section className="home">
-          {/* <ImageGallery
-            items={this.state.images}
-            showThumbnails={this.state.showThumbnails}
-            showFullscreenButton={this.state.showFullscreenButton}
-            showPlayButton={this.state.showPlayButton}
-            showBullets={this.state.showBullets}
-            autoPlay={this.state.autoPlay}
-            slideInterval={this.state.slideInterval}
-          /> */}
-          <section className="banner">
-            <h3>Want a new home without moving?</h3>
-            <h2>Contact timberline for a free quote!</h2>
-            <Link to="/contact-us">
-              <button>Contact Us</button>
-            </Link>
-          </section>
+          <div className="banner_container">
+            <div className="banner">
+              <h3>Want a new home without moving?</h3>
+              <h2>Contact timberline for a free quote!</h2>
+              <Link to="/contact-us">
+                <button>Contact Us</button>
+              </Link>
+            </div>
+          </div>
           <section id="home_center_main" className="section_container">
             <article className="article_container">
               <h2 className="article_header">Raise, Repair, Remodel</h2>
@@ -108,21 +101,6 @@ export default class Home extends Component {
                 quality solutions for your construction needs.
               </p>
             </article>
-          </section>
-          <section className="home_contact_form">
-            <article>
-              <h3>Interested in remodeling your home?</h3>
-              <h2>Get in touch with us for a free quote!</h2>
-              <p>
-                Eiusmod quis adipisicing irure laborum sint excepteur aute
-                laboris aute elit incididunt cupidatat nulla proident. Cillum
-                officia cillum do excepteur non laboris cupidatat enim tempor
-                est fugiat cupidatat anim. Cupidatat labore nulla pariatur qui.
-                Dolor adipisicing est consequat et non officia proident minim
-                duis sunt qui voluptate.
-              </p>
-            </article>
-            <ContactForm />
           </section>
         </section>
       </Layout>
