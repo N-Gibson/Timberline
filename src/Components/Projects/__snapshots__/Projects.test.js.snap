@@ -14,6 +14,7 @@ exports[`Projects Component Projects component should match snapshot 1`] = `
         className="project_container"
       >
         <img
+          alt="project completed by Timberline Inc"
           className="projects_photos"
           id="purple_aster"
           src="Purple_Aster.jpg"
@@ -32,6 +33,7 @@ exports[`Projects Component Projects component should match snapshot 1`] = `
         className="project_container"
       >
         <img
+          alt="project completed by Timberline Inc"
           className="projects_photos"
           id="venado_front"
           src="Venado_front.jpg"
@@ -50,6 +52,7 @@ exports[`Projects Component Projects component should match snapshot 1`] = `
         className="project_container"
       >
         <img
+          alt="project completed by Timberline Inc"
           className="projects_photos"
           id="venado_kitchen"
           src="Venado_Kitchen.jpg"

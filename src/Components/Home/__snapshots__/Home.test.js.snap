@@ -7,23 +7,27 @@ exports[`Home Home component should match snapshot 1`] = `
   <section
     className="home"
   >
-    <section
-      className="banner"
+    <div
+      className="banner_container"
     >
-      <h3>
-        Want a new home without moving?
-      </h3>
-      <h2>
-        Contact timberline for a free quote!
-      </h2>
-      <Link
-        to="/contact-us"
+      <div
+        className="banner"
       >
-        <button>
-          Contact Us
-        </button>
-      </Link>
-    </section>
+        <h3>
+          Want a new home without moving?
+        </h3>
+        <h2>
+          Contact timberline for a free quote!
+        </h2>
+        <Link
+          to="/contact-us"
+        >
+          <button>
+            Contact Us
+          </button>
+        </Link>
+      </div>
+    </div>
     <section
       className="section_container"
       id="home_center_main"

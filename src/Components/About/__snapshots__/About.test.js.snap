@@ -8,11 +8,15 @@ exports[`About component Should match snapshot 1`] = `
     className="about_main"
   >
     <div
-      id="about_banner"
+      className="about_banner_container"
     >
-      <h2>
-        About Us
-      </h2>
+      <div
+        id="about_banner"
+      >
+        <h2>
+          About Us
+        </h2>
+      </div>
     </div>
     <section
       className="about"
