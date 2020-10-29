@@ -14,9 +14,9 @@ Timberline Inc. is a small construction company based in New Mexico. Throughout 
 
 To view this app locally on your machine, run the following commands: 
 
-`git clone https://github.com/N-Gibson/Timberline.git`
-`npm install`
-`npm start`
+- `git clone https://github.com/N-Gibson/Timberline.git`
+- `npm install`
+- `npm start`
 
 The application is deployed at http://www.timberlineincsantafe.com/ if you'd like to see it live. 
 
