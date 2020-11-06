@@ -2,50 +2,45 @@ import React, { useState } from "react";
 import "./ContactForm.scss";
 
 export default function ContactForm() {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [description, setDescription] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    description: "",
+    loading: false
+  })
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    console.log("ready to submit contact info");
-    setName("");
-    setPhone("");
-    setEmail("");
-    setDescription("");
-    setLoading(false);
-  };
+  const setFormChange = (key) => ({ target: { value } }) => {
+    setForm((prev) => ({ ...prev, [key]: value }))
+  }
 
   return (
-    <form className="contact_form" onSubmit={handleSubmit}>
+    <form className="contact_form" onSubmit={setFormChange}>
       <h2>Contact Us</h2>
       <input
         type="text"
         placeholder="Name"
-        onChange={(e) => setName(e.target.value)}
-        value={name}
+        onChange={setFormChange('name')}
+        value={form.name}
       />
       <input
         type="number"
         placeholder="Phone Number"
-        value={phone}
-        onChange={(e) => setPhone(e.target.value)}
+        value={form.phone}
+        onChange={setFormChange('phone')}
       />
       <input
         type="text"
         placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
+        value={form.email}
+        onChange={setFormChange('email')}
       />
       <label htmlFor="description">Short Description</label>
       <textarea
         name="description"
         type="text"
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
+        value={form.description}
+        onChange={setFormChange('description')}
       />
       <button type="submit">Submit</button>
     </form>
