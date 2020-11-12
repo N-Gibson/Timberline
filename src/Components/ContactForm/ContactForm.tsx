@@ -10,7 +10,7 @@ export default function ContactForm() {
     loading: false
   })
 
-  const setFormChange = (key) => ({ target: { value } }) => {
+  const setFormChange = (key : any) => ({ target: { value } }: any) => {
     setForm((prev) => ({ ...prev, [key]: value }))
   }
 
@@ -21,25 +21,24 @@ export default function ContactForm() {
         type="text"
         placeholder="Name"
         onChange={setFormChange('name')}
-        value={form.name}
+        value={form.name as any}
       />
       <input
         type="number"
         placeholder="Phone Number"
-        value={form.phone}
+        value={form.phone as any}
         onChange={setFormChange('phone')}
       />
       <input
         type="text"
         placeholder="Email"
-        value={form.email}
+        value={form.email as any}
         onChange={setFormChange('email')}
       />
       <label htmlFor="description">Short Description</label>
       <textarea
         name="description"
-        type="text"
-        value={form.description}
+        value={form.description as any}
         onChange={setFormChange('description')}
       />
       <button type="submit">Submit</button>
