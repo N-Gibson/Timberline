@@ -1,0 +1,89 @@
+.section_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5em 0;
+}
+
+.banner_container {
+  padding-top: 150px;
+}
+
+.banner {
+  background-image: url("../../assets/Venado_front.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.banner * {
+  margin: 0.5em 0;
+}
+
+.banner h3 {
+  text-transform: uppercase;
+  color: white;
+}
+
+.banner h2 {
+  text-transform: capitalize;
+  color: white;
+}
+
+.banner button {
+  width: 150px;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.banner button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.article_container {
+  width: 33%;
+  border-radius: 6px;
+  background-color: #c8ad96;
+  box-shadow: 10px 0px 20px 0px #00000040;
+  padding: 1.5em;
+}
+
+.section_img {
+  border-radius: 16px;
+  background-color: #c8ad96;
+  box-shadow: 10px 0px 20px 0px #00000040;
+}
+
+.article_header {
+  margin: 0;
+  word-spacing: 2px;
+}
+
+.article_text {
+  letter-spacing: 1px;
+  line-height: 2;
+  font-size: 1.25em;
+}
+
+#home_center_main {
+  background-color: #e0e0e0;
+  box-shadow: 10px 0px 20px 0px #00000040;
+  margin: 0 0 5em 0;
+}
+
+#rrr_img {
+  width: 40%;
+}
+
+#meet_owner_img {
+  width: 30%;
+}
