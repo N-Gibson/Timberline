@@ -1,11 +1,13 @@
 import React from 'react'
 import './App.css'
 import { Route } from 'react-router-dom'
-import { Home } from '@timberline/Components/Home'
-import { About } from '@timberline/Components/About'
-import { History } from '@timberline/Components/History'
-import { Projects } from '@timberline/Components/Projects'
-import { ContactUs } from '@timberline/Components/ContactUs'
+import {
+  Home,
+  About,
+  History,
+  Projects,
+  ContactUs,
+} from '@timberline/Components'
 
 function App() {
   return (
