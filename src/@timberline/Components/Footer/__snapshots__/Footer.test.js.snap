@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Footer component should match snapshot 1`] = `
+<footer>
+  <p
+    className="footer_content"
+  >
+    Contact Us
+  </p>
+  <p
+    className="footer_content"
+  >
+    (505)-470-5446
+  </p>
+  <p
+    className="footer_content"
+  >
+    timberlineinc.steve@gmail.com
+  </p>
+</footer>
+`;
