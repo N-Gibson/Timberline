@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout } from '../Layout'
+import { Layout } from '@timberline/Components'
 import './Projects.scss'
 import { Link } from 'react-router-dom'
 import purpleAster from '../../assets/Purple_Aster.jpg'

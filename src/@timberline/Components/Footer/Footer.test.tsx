@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { Footer } from '.'
+import { Footer } from '@timberline/Components'
 
 describe('Footer', () => {
   const wrapper = shallow(<Footer />)

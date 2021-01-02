@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Projects from '.'
+import { Projects } from '@timberline/Components'
 
 describe('Projects Component', () => {
   const wrapper = shallow(<Projects />)

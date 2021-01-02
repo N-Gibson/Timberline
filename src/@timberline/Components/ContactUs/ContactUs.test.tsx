@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { ContactUs } from './index'
+import { ContactUs } from '@timberline/Components'
 
 describe('ContactUs Component', () => {
   //@ts-ignore

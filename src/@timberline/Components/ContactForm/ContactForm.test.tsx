@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { ContactForm } from './index'
+import { ContactForm } from '@timberline/Components'
 
 describe('ContactForm', () => {
   const wrapper = shallow(<ContactForm />)

@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import History from '.'
+import { History } from '@timberline/Components'
 
 describe('History', () => {
   const wrapper = shallow(<History />)

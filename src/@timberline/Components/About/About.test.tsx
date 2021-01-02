@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { About } from '@timberline/Components/About'
+import { About } from '@timberline/Components'
 
 describe('About component', () => {
   let wrapper: any
