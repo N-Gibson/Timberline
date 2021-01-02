@@ -9,3 +9,6 @@ import React from 'react'
 //     expect(wrapper).toMatchSnapshot()
 //   })
 // })
+
+// Running into ts errors when trying to make a shallow render of App
+// Could be problem in the tsconfig
