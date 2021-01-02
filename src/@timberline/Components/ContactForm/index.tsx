@@ -21,24 +21,24 @@ const ContactForm = () => {
         type="text"
         placeholder="Name"
         onChange={setFormChange('name')}
-        value={form.name as any}
+        value={form.name as string}
       />
       <input
         type="number"
         placeholder="Phone Number"
-        value={form.phone as any}
+        value={form.phone as string}
         onChange={setFormChange('phone')}
       />
       <input
         type="text"
         placeholder="Email"
-        value={form.email as any}
+        value={form.email as string}
         onChange={setFormChange('email')}
       />
       <label htmlFor="description">Short Description</label>
       <textarea
         name="description"
-        value={form.description as any}
+        value={form.description as string}
         onChange={setFormChange('description')}
       />
       <button type="submit">Submit</button>
