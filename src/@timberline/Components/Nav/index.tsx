@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './Nav.scss'
 import timberline_logo from '../../assets/timberline-const.png'
