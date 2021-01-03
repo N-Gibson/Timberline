@@ -1,8 +1,8 @@
 import React from 'react'
 import { Layout } from '../Layout'
 import { Link } from 'react-router-dom'
-import purpleAster from '../../assets/Purple_Aster.jpg'
-import profile from '../../assets/profile.jpg'
+import purpleAster from '@timberline/assets/Purple_Aster.jpg'
+import profile from '@timberline/assets/profile.jpg'
 import 'react-image-gallery/styles/css/image-gallery.css'
 
 import './Home.scss'
