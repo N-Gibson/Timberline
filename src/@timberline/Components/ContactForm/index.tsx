@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, createRef } from 'react'
+
 import emailjs from 'emailjs-com'
 import { v4 as uuidv4 } from 'uuid'
-import { Snackbar } from '@material-ui/core'
+import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator'
+import { Button, TextField } from '@material-ui/core'
 
 import notify from '@timberline/notifications'
+import vm from '@timberline/formValidation/validationMessages'
+
 import './ContactForm.scss'
 
 const ContactForm = () => {
@@ -16,6 +20,9 @@ const ContactForm = () => {
   }
 
   const [form, setForm] = useState(formDefaults)
+  const formRef = createRef()
+
+  let descriptionError
 
   const setFormChange = (key: any) => ({ target: { value } }: any) => {
     setForm((prev) => ({ ...prev, [key]: value }))
@@ -39,39 +46,61 @@ const ContactForm = () => {
       .catch(() => {
         notify.error('There was an error sending your work inquiry.')
       })
+
+    setForm(formDefaults)
+  }
+
+  const submitOnClick = () => {
+    //@ts-ignore
+    formRef.current.submit()
   }
 
   return (
-    <form className="contact_form" onSubmit={sendEmail}>
-      <h2>Contact Us</h2>
-      <input
-        type="text"
-        placeholder="Name"
+    <ValidatorForm
+      onSubmit={sendEmail}
+      debounceTime={1500}
+      ref={formRef as any}
+    >
+      <TextValidator
+        name="name"
+        validators={['required']}
+        errorMessages={[vm.required]}
+        value={form.name}
+        label="Name"
         onChange={setFormChange('name')}
-        value={form.name as string}
       />
-      <input
+      <TextValidator
+        name="phone"
         type="number"
-        placeholder="Phone Number"
-        value={form.phone as string}
+        validators={['required']}
+        errorMessages={[vm.required]}
+        value={form.phone}
+        label="Phone"
         onChange={setFormChange('phone')}
       />
-      <input
-        type="email"
-        placeholder="Email"
-        value={form.email as string}
+      <TextValidator
+        name="email"
+        validators={['required', 'isEmail']}
+        errorMessages={[vm.required, vm.email]}
+        value={form.email}
+        label="Email"
         onChange={setFormChange('email')}
       />
-      <label htmlFor="description">Short Description</label>
-      <textarea
-        name="description"
-        value={form.description as string}
+      <TextField
+        label="Description"
+        placeholder="Please include a brief description of the work required here:"
+        value={form.description}
+        multiline
+        variant="outlined"
+        rows={5}
+        required={true}
+        // error={descriptionError}
         onChange={setFormChange('description')}
       />
-      <button type="submit" onClick={() => setForm(formDefaults)}>
+      <Button type="submit" onClick={submitOnClick}>
         Submit
-      </button>
-    </form>
+      </Button>
+    </ValidatorForm>
   )
 }
 
