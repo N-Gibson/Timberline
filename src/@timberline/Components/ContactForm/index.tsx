@@ -22,7 +22,7 @@ const ContactForm = () => {
   const [form, setForm] = useState(formDefaults)
   const formRef = createRef()
 
-  let descriptionError
+  // let descriptionError
 
   const setFormChange = (key: any) => ({ target: { value } }: any) => {
     setForm((prev) => ({ ...prev, [key]: value }))
@@ -57,6 +57,7 @@ const ContactForm = () => {
 
   return (
     <ValidatorForm
+      className="contact_form"
       onSubmit={sendEmail}
       debounceTime={1500}
       ref={formRef as any}
