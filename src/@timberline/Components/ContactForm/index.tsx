@@ -1,21 +1,48 @@
 import React, { useState } from 'react'
+import emailjs from 'emailjs-com'
+import { v4 as uuidv4 } from 'uuid'
+import { Snackbar } from '@material-ui/core'
+
+import notify from '@timberline/notifications'
 import './ContactForm.scss'
 
 const ContactForm = () => {
-  const [form, setForm] = useState({
+  const formDefaults = {
     name: '',
     phone: '',
     email: '',
     description: '',
     loading: false,
-  })
+  }
+
+  const [form, setForm] = useState(formDefaults)
 
   const setFormChange = (key: any) => ({ target: { value } }: any) => {
     setForm((prev) => ({ ...prev, [key]: value }))
   }
 
+  const sendEmail = (e: any) => {
+    e.preventDefault()
+
+    const templateParams = { ...form, id: uuidv4() }
+
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        process.env.REACT_APP_EMAILJS_USER_ID!,
+      )
+      .then(() => {
+        notify.success('Work inquiry successfully sent!')
+      })
+      .catch(() => {
+        notify.error('There was an error sending your work inquiry.')
+      })
+  }
+
   return (
-    <form className="contact_form" onSubmit={setFormChange}>
+    <form className="contact_form" onSubmit={sendEmail}>
       <h2>Contact Us</h2>
       <input
         type="text"
@@ -30,7 +57,7 @@ const ContactForm = () => {
         onChange={setFormChange('phone')}
       />
       <input
-        type="text"
+        type="email"
         placeholder="Email"
         value={form.email as string}
         onChange={setFormChange('email')}
@@ -41,7 +68,9 @@ const ContactForm = () => {
         value={form.description as string}
         onChange={setFormChange('description')}
       />
-      <button type="submit">Submit</button>
+      <button type="submit" onClick={() => setForm(formDefaults)}>
+        Submit
+      </button>
     </form>
   )
 }
