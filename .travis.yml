@@ -1,10 +1,13 @@
 language: node_js
+os: [osx]
+dist: xenial
 node_js:
   - node
 notifications:
   email: false
 deploy:
   provider: heroku
+  strategy: api
   api_key:
     secure: process.env.REACT_APP_CD
     app: timberlineincsantafe
