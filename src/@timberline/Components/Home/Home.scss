@@ -6,14 +6,14 @@
 }
 
 .banner_container {
-  padding-top: 150px;
+  padding-top: 125px;
 }
 
 .banner {
-  background-image: url("../../assets/Venado_front.jpg");
+  background-image: url('../../assets/Venado_front.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 80vh;
+  height: 85vh;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -26,28 +26,41 @@
   margin: 0.5em 0;
 }
 
-.banner h3 {
-  text-transform: uppercase;
-  color: white;
+.logo_text_background {
+  background-image: url('../../assets/translucent.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 15px 0px;
+  position: relative;
+  width: 75%;
 }
 
-.banner h2 {
-  text-transform: capitalize;
-  color: white;
-}
+// .banner h3 {
+//   text-transform: uppercase;
+//   color: white;
+// }
 
-.banner button {
-  width: 150px;
-  height: 30px;
-  border-radius: 6px;
-  border: none;
-  transition: transform 0.2s;
-}
+// .banner h2 {
+//   text-transform: capitalize;
+//   color: white;
+// }
 
-.banner button:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
+// .banner button {
+//   width: 150px;
+//   height: 30px;
+//   border-radius: 6px;
+//   border: none;
+//   transition: transform 0.2s;
+// }
+
+// .banner button:hover {
+//   transform: scale(1.05);
+//   cursor: pointer;
+// }
 
 .article_container {
   width: 33%;

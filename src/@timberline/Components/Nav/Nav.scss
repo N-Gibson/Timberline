@@ -4,9 +4,10 @@ header {
   box-shadow: inset 0px 0px 20px 0px #00000040;
   display: flex;
   justify-content: space-between;
-  height: 150px;
+  height: 125px;
   position: fixed;
   width: 100vw;
+  z-index: 20;
 }
 
 #timberline_logo {
