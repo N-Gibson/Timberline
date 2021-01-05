@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './Nav.scss'
-import timberline_logo from '../../assets/timberline-const.png'
-import logo_25 from '../../assets/25+_timberline.png'
+import timberline_logo from '@timberline/assets/timberline-const.png'
+import logo_25 from '@timberline/assets/25+_timberline.png'
 
 interface NavProps {
   active: string
