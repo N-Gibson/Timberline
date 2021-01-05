@@ -1,7 +1,8 @@
 import React from 'react'
+
 import { Layout } from '@timberline/Components/Layout'
+import Hallway from '@timberline/assets/Venado_Hallway.jpg'
 import './About.scss'
-import Hallway from '../../assets/Venado_Hallway.jpg'
 
 const About = () => {
   return (
