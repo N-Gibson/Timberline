@@ -1,10 +1,12 @@
 import React from 'react'
-import { Layout } from '../Layout'
 import { Link } from 'react-router-dom'
+
+import ScrollAnimation from 'react-animate-on-scroll'
+
+import { Layout } from '@timberline/Components'
 import purpleAster from '@timberline/assets/Purple_Aster.jpg'
 import profile from '@timberline/assets/profile.jpg'
-import 'react-image-gallery/styles/css/image-gallery.css'
-
+import timberline_text_only from '@timberline/assets/timberline_text_only.png'
 import './Home.scss'
 
 interface HomeProps {}
@@ -15,11 +17,16 @@ const Home: React.FC<HomeProps> = ({}) => {
       <section className="home">
         <div className="banner_container">
           <div className="banner">
-            <h3>Want a new home without moving?</h3>
+            {/* <h3>Want a new home without moving?</h3>
             <h2>Contact timberline for a free quote!</h2>
             <Link to="/contact-us">
               <button>Contact Us</button>
-            </Link>
+            </Link> */}
+            <ScrollAnimation animateIn="fadeIn">
+              <div className="logo_text_background">
+                <img src={timberline_text_only}></img>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
         <section id="home_center_main" className="section_container">
