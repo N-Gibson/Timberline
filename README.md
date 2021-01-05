@@ -5,7 +5,9 @@ Timberline Inc. is a small construction company based in New Mexico. Throughout 
 ## Tech
 
 - React.js
+- TypeScript
 - React Router
+- MUI
 - SAAS
 - Jest
 - Enzyme
