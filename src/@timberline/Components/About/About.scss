@@ -4,10 +4,10 @@
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "about about"
-    "narrative bucket";
+    'about about'
+    'narrative bucket';
   height: auto;
-  text-align: "left";
+  text-align: 'left';
 }
 
 #about_article {
@@ -25,11 +25,11 @@
 }
 
 .about_banner_container {
-  padding-top: 150px;
+  padding-top: 125px;
 }
 
 #about_banner {
-  background-image: url("../../assets/Purple_Aster.jpg");
+  background-image: url('../../assets/Purple_Aster.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 25rem;
