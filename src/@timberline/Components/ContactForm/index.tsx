@@ -28,9 +28,7 @@ const ContactForm = () => {
     setForm((prev) => ({ ...prev, [key]: value }))
   }
 
-  const sendEmail = (e: any) => {
-    e.preventDefault()
-
+  const sendEmail = () => {
     const templateParams = { ...form, id: uuidv4() }
 
     emailjs
