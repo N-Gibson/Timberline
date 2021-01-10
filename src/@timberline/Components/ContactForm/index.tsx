@@ -22,8 +22,6 @@ const ContactForm = () => {
   const [form, setForm] = useState(formDefaults)
   const formRef = createRef()
 
-  // let descriptionError
-
   const setFormChange = (key: any) => ({ target: { value } }: any) => {
     setForm((prev) => ({ ...prev, [key]: value }))
   }
@@ -93,7 +91,6 @@ const ContactForm = () => {
         variant="outlined"
         rows={5}
         required={true}
-        // error={descriptionError}
         onChange={setFormChange('description')}
       />
       <Button type="submit" onClick={submitOnClick}>
