@@ -17,6 +17,7 @@ const ContactForm = () => {
     email: '',
     description: '',
     loading: false,
+    descriptionError: false,
   }
 
   const [form, setForm] = useState(formDefaults)
@@ -26,7 +27,9 @@ const ContactForm = () => {
     setForm((prev) => ({ ...prev, [key]: value }))
   }
 
-  const sendEmail = () => {
+  const sendEmail = (e: any) => {
+    e.preventDefault()
+
     const templateParams = { ...form, id: uuidv4() }
 
     emailjs
@@ -46,9 +49,17 @@ const ContactForm = () => {
     setForm(formDefaults)
   }
 
+  const toggleDescriptionError = () => {
+    !form.description
+      ? setForm((prev) => ({ ...prev, descriptionError: true }))
+      : setForm((prev) => ({ ...prev, descriptionError: false }))
+  }
+
   const submitOnClick = () => {
     //@ts-ignore
     formRef.current.submit()
+
+    toggleDescriptionError()
   }
 
   return (
@@ -91,6 +102,7 @@ const ContactForm = () => {
         variant="outlined"
         rows={5}
         required={true}
+        error={form.descriptionError}
         onChange={setFormChange('description')}
       />
       <Button type="submit" onClick={submitOnClick}>

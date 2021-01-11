@@ -62,6 +62,7 @@ exports[`ContactForm should match the snapshot 1`] = `
     value=""
   />
   <WithStyles(ForwardRef(TextField))
+    error={false}
     label="Description"
     multiline={true}
     onChange={[Function]}
