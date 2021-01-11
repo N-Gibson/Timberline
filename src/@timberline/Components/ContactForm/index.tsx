@@ -17,6 +17,7 @@ const ContactForm = () => {
     email: '',
     description: '',
     loading: false,
+    descriptionError: false,
   }
 
   const [form, setForm] = useState(formDefaults)
@@ -44,20 +45,21 @@ const ContactForm = () => {
         notify.success('Work inquiry successfully sent!')
       })
       .catch(() => {
-        console.log(
-          process.env.REACT_APP_EMAILJS_SERVICE_ID,
-          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-          process.env.REACT_APP_EMAILJS_USER_ID,
-        )
         notify.error('There was an error sending your work inquiry.')
       })
 
     setForm(formDefaults)
   }
 
+  const toggleDescriptionError = () => {
+    setForm((prev) => ({ ...prev, descriptionError: !form.descriptionError }))
+  }
+
   const submitOnClick = () => {
     //@ts-ignore
     formRef.current.submit()
+
+    if (!form.description) toggleDescriptionError()
   }
 
   return (
@@ -100,7 +102,7 @@ const ContactForm = () => {
         variant="outlined"
         rows={5}
         required={true}
-        // error={descriptionError}
+        error={form.descriptionError}
         onChange={setFormChange('description')}
       />
       <Button type="submit" onClick={submitOnClick}>
