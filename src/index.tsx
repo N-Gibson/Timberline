@@ -1,21 +1,26 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
 import * as serviceWorker from './serviceWorker'
 import { BrowserRouter } from 'react-router-dom'
+import { MuiThemeProvider } from '@material-ui/core'
 import { SnackbarProvider } from 'notistack'
 
+import './index.css'
+import App from './App'
+
 import { SnackbarUtilsConfig } from '@timberline/notifications'
+import Theme from '@timberline/material-ui/theme'
 
 ReactDOM.render(
   <React.StrictMode>
-    <SnackbarProvider>
-      <SnackbarUtilsConfig />
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </SnackbarProvider>
+    <MuiThemeProvider theme={Theme}>
+      <SnackbarProvider>
+        <SnackbarUtilsConfig />
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </SnackbarProvider>
+    </MuiThemeProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 )
