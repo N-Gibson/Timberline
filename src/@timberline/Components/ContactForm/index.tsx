@@ -23,8 +23,6 @@ const ContactForm = () => {
   const [form, setForm] = useState(formDefaults)
   const formRef = createRef()
 
-  // let descriptionError
-
   const setFormChange = (key: any) => ({ target: { value } }: any) => {
     setForm((prev) => ({ ...prev, [key]: value }))
   }
@@ -52,14 +50,16 @@ const ContactForm = () => {
   }
 
   const toggleDescriptionError = () => {
-    setForm((prev) => ({ ...prev, descriptionError: !form.descriptionError }))
+    !form.description
+      ? setForm((prev) => ({ ...prev, descriptionError: true }))
+      : setForm((prev) => ({ ...prev, descriptionError: false }))
   }
 
   const submitOnClick = () => {
     //@ts-ignore
     formRef.current.submit()
 
-    if (!form.description) toggleDescriptionError()
+    toggleDescriptionError()
   }
 
   return (
