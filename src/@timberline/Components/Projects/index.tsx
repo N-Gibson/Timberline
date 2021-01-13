@@ -1,14 +1,20 @@
 import React from 'react'
-import { Layout } from '@timberline/Components'
-import './Projects.scss'
 import { Link } from 'react-router-dom'
-import purpleAster from '../../assets/Purple_Aster.jpg'
-import venadoFront from '../../assets/Venado_front.jpg'
-import venadoKitchen from '../../assets/Venado_Kitchen.jpg'
 
-const Projects = () => {
+import { Layout } from '@timberline/Components'
+import purpleAster from '@timberline/assets/Purple_Aster.jpg'
+import venadoFront from '@timberline/assets/Venado_front.jpg'
+import venadoKitchen from '@timberline/assets/Venado_Kitchen.jpg'
+
+import './Projects.scss'
+
+interface ProjectsProps {
+  props: any
+}
+
+const Projects: React.FC<ProjectsProps> = (props) => {
   return (
-    <Layout active="projects">
+    <Layout props={props} active="projects">
       <section className="projects">
         <Link to="/projects/1">
           <div className="project_container">
