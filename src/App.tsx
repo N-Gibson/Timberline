@@ -9,13 +9,13 @@ import {
   ContactUs,
 } from '@timberline/Components'
 
-function App() {
+function App(props: any) {
   return (
     <main className="App">
-      <Route exact path="/" render={() => <Home />} />
-      <Route exact path="/about" render={() => <About />} />
-      <Route path="/projects" render={() => <Projects />} />
-      <Route path="/contact-us" render={() => <ContactUs />} />
+      <Route exact path="/" render={() => <Home props={props} />} />
+      <Route exact path="/about" render={() => <About props={props} />} />
+      <Route path="/projects" render={() => <Projects props={props} />} />
+      <Route path="/contact-us" render={() => <ContactUs props={props} />} />
       <Route path="/history" render={() => <History />} />
     </main>
   )
