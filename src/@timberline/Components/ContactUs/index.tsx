@@ -1,11 +1,16 @@
 import React from 'react'
-import './ContactUs.scss'
-import { Layout } from '../Layout'
-import { ContactForm } from '@timberline/Components'
 
-const ContactUs = () => {
+import { ContactForm, Layout } from '@timberline/Components'
+
+import './ContactUs.scss'
+
+interface ContactUsProps {
+  props: any
+}
+
+const ContactUs: React.FC<ContactUsProps> = (props) => {
   return (
-    <Layout active="contact">
+    <Layout props={props} active="contact">
       <div className="contactUs_container">
         <section className="contactUs">
           <article>
