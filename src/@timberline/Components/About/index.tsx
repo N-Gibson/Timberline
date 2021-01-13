@@ -2,11 +2,16 @@ import React from 'react'
 
 import { Layout } from '@timberline/Components/Layout'
 import Hallway from '@timberline/assets/Venado_Hallway.jpg'
+
 import './About.scss'
 
-const About = () => {
+interface AboutProps {
+  props: any
+}
+
+const About: React.FC<AboutProps> = (props) => {
   return (
-    <Layout active="about">
+    <Layout props={props} active="about">
       <section className="about_main">
         <div className="about_banner_container">
           <div id="about_banner">
