@@ -1,19 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import { Layout } from '@timberline/Components'
 import purpleAster from '@timberline/assets/Purple_Aster.jpg'
 import profile from '@timberline/assets/profile.jpg'
 import timberline_text_only from '@timberline/assets/timberline_text_only.png'
+
 import './Home.scss'
 
-interface HomeProps {}
+interface HomeProps {
+  props: any
+}
 
-const Home: React.FC<HomeProps> = ({}) => {
+const Home: React.FC<HomeProps> = (props) => {
   return (
-    <Layout active="home">
+    <Layout props={props} active="home">
       <section className="home">
         <div className="banner_container">
           <div className="banner">
