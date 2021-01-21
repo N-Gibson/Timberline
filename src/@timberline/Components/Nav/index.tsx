@@ -44,8 +44,9 @@ const Nav: React.FC<NavProps> = ({ active, props }) => {
   }
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
-    setActiveTab(newValue)
+    event.preventDefault()
     history.push(`${tabNameToIndex[newValue as keyof TabNameToIndexProps]}`)
+    setActiveTab(newValue)
   }
 
   const LinkTab = (props: LinkTabProps) => {
