@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { AppBar, Tabs, Tab, Box, Typography } from '@material-ui/core'
 
 import timberline_logo from '@timberline/assets/timberline-const.png'
@@ -22,14 +23,21 @@ interface TabPanelProps {
   value: any
 }
 
+interface TabNameToIndexProps {
+  0: string
+  1: string
+  2: string
+  3: string
+}
+
 const Nav: React.FC<NavProps> = ({ active, props }) => {
   // const idleButton = 'nav_button'
   // const activeButton = 'nav_button active_button'
   const [activeTab, setActiveTab] = useState(0)
-  const { history } = props
+  const history = useHistory()
 
   const tabNameToIndex = {
-    0: 'home',
+    0: '/',
     1: 'about',
     2: 'projects',
     3: 'contact-us',
@@ -37,8 +45,7 @@ const Nav: React.FC<NavProps> = ({ active, props }) => {
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
     setActiveTab(newValue)
-    console.log(history)
-    // history.push(`${tabNameToIndex as any[typeof newValue]}`)
+    history.push(`${tabNameToIndex[newValue as keyof TabNameToIndexProps]}`)
   }
 
   const LinkTab = (props: LinkTabProps) => {
@@ -99,6 +106,7 @@ const Nav: React.FC<NavProps> = ({ active, props }) => {
     //   </section>
     // </header>
     <>
+      {/* <img id="timberline_logo" src={timberline_logo} alt="timberline logo" /> */}
       <AppBar position="static">
         <Tabs value={activeTab} onChange={handleChange}>
           <LinkTab label="Home" href="/" />
