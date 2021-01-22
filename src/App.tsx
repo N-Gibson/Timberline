@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.scss'
-import { Route } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom'
 import {
   Home,
   About,
@@ -12,7 +12,10 @@ import {
 function App(props: any) {
   return (
     <main className="App">
-      <Route exact path="/" render={() => <Home props={props} />} />
+      <Route exact path="/">
+        <Redirect to="/home" />
+      </Route>
+      <Route exact path="/home" render={() => <Home props={props} />} />
       <Route exact path="/about" render={() => <About props={props} />} />
       <Route path="/projects" render={() => <Projects props={props} />} />
       <Route path="/contact-us" render={() => <ContactUs props={props} />} />
