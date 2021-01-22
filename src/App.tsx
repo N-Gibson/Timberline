@@ -18,7 +18,7 @@ function App(props: any) {
       <Route exact path="/home" render={() => <Home props={props} />} />
       <Route exact path="/about" render={() => <About props={props} />} />
       <Route path="/projects" render={() => <Projects props={props} />} />
-      <Route path="/contact-us" render={() => <ContactUs props={props} />} />
+      <Route path="/contact_us" render={() => <ContactUs props={props} />} />
       <Route path="/history" render={() => <History />} />
     </main>
   )
