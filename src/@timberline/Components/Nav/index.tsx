@@ -1,26 +1,18 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { useHistory } from 'react-router-dom'
-import { AppBar, Tabs, Tab, Box, Typography } from '@material-ui/core'
+import { AppBar, Tabs, Tab, IconButton } from '@material-ui/core'
 
 import timberline_logo from '@timberline/assets/timberline-const.png'
 
 import './Nav.scss'
+import { useStyles } from './style'
 
 interface NavProps {
-  active: string
   props: any
 }
 
 interface LinkTabProps {
   label?: string
-  href?: string
-}
-
-interface TabPanelProps {
-  children?: React.ReactNode
-  index: any
-  value: any
 }
 
 interface TabNameToIndexProps {
@@ -30,18 +22,36 @@ interface TabNameToIndexProps {
   3: string
 }
 
-const Nav: React.FC<NavProps> = ({ active, props }) => {
-  // const idleButton = 'nav_button'
-  // const activeButton = 'nav_button active_button'
-  const [activeTab, setActiveTab] = useState(0)
+interface TabIndexToNameProps {
+  home: number
+  about: number
+  projects: number
+  contact_us: number
+}
+
+const Nav: React.FC<NavProps> = () => {
   const history = useHistory()
+  const classes = useStyles()
 
   const tabNameToIndex = {
-    0: '/',
+    0: 'home',
     1: 'about',
     2: 'projects',
-    3: 'contact-us',
+    3: 'contact_us',
   }
+
+  const tabIndexToName = {
+    home: 0,
+    about: 1,
+    projects: 2,
+    contact_us: 3,
+  }
+
+  const [activeTab, setActiveTab] = useState(
+    tabIndexToName[
+      history.location.pathname.slice(1) as keyof TabIndexToNameProps
+    ],
+  )
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
     event.preventDefault()
@@ -50,76 +60,28 @@ const Nav: React.FC<NavProps> = ({ active, props }) => {
   }
 
   const LinkTab = (props: LinkTabProps) => {
-    return (
-      <Tab
-        onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-          event.preventDefault()
-        }}
-        {...props}
-      />
-    )
-  }
-
-  const TabPanel = (props: TabPanelProps) => {
-    const { children, value, index } = props
-
-    return (
-      <div>
-        {value === index && (
-          <Box>
-            <Typography>{children}</Typography>
-          </Box>
-        )}
-      </div>
-    )
+    return <Tab {...props} />
   }
 
   return (
-    // <header>
-    //   <Link to="/">
-    //     <img id="timberline_logo" src={timberline_logo} alt="timberline logo" />
-    //   </Link>
-    //   <section id="nav_buttons_container">
-    //     <Link to="/about">
-    //       <button
-    //         className={active === 'about' ? activeButton : idleButton}
-    //         id="about_nav_button"
-    //       >
-    //         About
-    //       </button>
-    //     </Link>
-    //     <Link to="/projects">
-    //       <button
-    //         className={active === 'projects' ? activeButton : idleButton}
-    //         id="projects_nav_button"
-    //       >
-    //         Projects
-    //       </button>
-    //     </Link>
-    //     <Link to="/contact-us">
-    //       <button
-    //         className={active === 'contact' ? activeButton : idleButton}
-    //         id="contact_us_nav_button"
-    //       >
-    //         Contact Us
-    //       </button>
-    //     </Link>
-    //   </section>
-    // </header>
     <>
-      {/* <img id="timberline_logo" src={timberline_logo} alt="timberline logo" /> */}
-      <AppBar position="static">
+      <AppBar className={classes.appBar} position="fixed">
+        <IconButton disabled={true}>
+          {
+            <img
+              className={classes.logo}
+              src={timberline_logo}
+              alt="timberline logo"
+            />
+          }
+        </IconButton>
         <Tabs value={activeTab} onChange={handleChange}>
-          <LinkTab label="Home" href="/" />
-          <LinkTab label="About" href="/about" />
-          <LinkTab label="Projects" href="/projects" />
-          <LinkTab label="Contact Us" href="/contact-us" />
+          <LinkTab label="Home" />
+          <LinkTab label="About" />
+          <LinkTab label="Projects" />
+          <LinkTab label="Contact Us" />
         </Tabs>
       </AppBar>
-      <TabPanel value={activeTab} index={activeTab}></TabPanel>
-      {/* <TabPanel value={activeTab} index={1}></TabPanel>
-      <TabPanel value={activeTab} index={2}></TabPanel>
-      <TabPanel value={activeTab} index={3}></TabPanel> */}
     </>
   )
 }
