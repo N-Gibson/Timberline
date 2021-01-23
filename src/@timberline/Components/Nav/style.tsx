@@ -8,6 +8,6 @@ export const useStyles = makeStyles(() => ({
   },
   logo: {
     height: '80px',
-    'margin-right': '50px',
+    margin: '0px 50px 0px 15px',
   },
 }))
