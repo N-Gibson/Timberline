@@ -2,20 +2,35 @@
 
 exports[`Footer Footer component should match snapshot 1`] = `
 <footer>
-  <p
-    className="footer_content"
+  <div
+    className="footer_subset"
   >
-    Contact Us
-  </p>
-  <p
-    className="footer_content"
+    <Memo([object Object]) />
+    <p
+      className="footer_content"
+    >
+      Contact Us
+    </p>
+  </div>
+  <div
+    className="footer_subset"
   >
-    (505)-470-5446
-  </p>
-  <p
-    className="footer_content"
+    <Memo([object Object]) />
+    <p
+      className="footer_content"
+    >
+      (505)-470-5446
+    </p>
+  </div>
+  <div
+    className="footer_subset"
   >
-    timberlineincsantafe@gmail.com
-  </p>
+    <Memo([object Object]) />
+    <p
+      className="footer_content"
+    >
+      timberlineincsantafe@gmail.com
+    </p>
+  </div>
 </footer>
 `;

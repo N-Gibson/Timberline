@@ -4,9 +4,20 @@ exports[`App App component should match the snapshot 1`] = `
 <main
   className="App"
 >
+  <Nav
+    props={Object {}}
+  />
   <Route
     exact={true}
     path="/"
+  >
+    <Redirect
+      to="/home"
+    />
+  </Route>
+  <Route
+    exact={true}
+    path="/home"
     render={[Function]}
   />
   <Route
@@ -19,12 +30,13 @@ exports[`App App component should match the snapshot 1`] = `
     render={[Function]}
   />
   <Route
-    path="/contact-us"
+    path="/contact_us"
     render={[Function]}
   />
   <Route
     path="/history"
     render={[Function]}
   />
+  <Footer />
 </main>
 `;

@@ -4,10 +4,10 @@
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "about about"
-    "narrative bucket";
+    'about about'
+    'narrative bucket';
   height: auto;
-  text-align: "left";
+  text-align: 'left';
 }
 
 #about_article {
@@ -24,12 +24,8 @@
   margin: 0 0 5em 0;
 }
 
-.about_banner_container {
-  padding-top: 150px;
-}
-
 #about_banner {
-  background-image: url("../../assets/Purple_Aster.jpg");
+  background-image: url('../../assets/Purple_Aster.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 25rem;
@@ -38,6 +34,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 120px;
 }
 
 #about_banner h2 {

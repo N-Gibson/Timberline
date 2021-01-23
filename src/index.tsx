@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { MuiThemeProvider } from '@material-ui/core'
 import { SnackbarProvider } from 'notistack'
 
-import './index.css'
+import './index.scss'
 import App from './App'
 
 import { SnackbarUtilsConfig } from '@timberline/notifications'
