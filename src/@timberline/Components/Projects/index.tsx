@@ -11,10 +11,6 @@ import './Projects.scss'
 interface ProjectsProps {}
 
 const Projects: React.FC<ProjectsProps> = () => {
-  const history = useHistory()
-
-  const handleClick = () => {}
-
   return (
     <section className="projects">
       <Tooltip title="Coming Soon!">
