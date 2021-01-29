@@ -4,8 +4,8 @@ exports[`Projects Component Projects component should match snapshot 1`] = `
 <section
   className="projects"
 >
-  <Link
-    to="/projects/1"
+  <WithStyles(ForwardRef(Tooltip))
+    title="Coming Soon!"
   >
     <div
       className="project_container"
@@ -22,9 +22,9 @@ exports[`Projects Component Projects component should match snapshot 1`] = `
         Purple Aster Spec Home
       </label>
     </div>
-  </Link>
-  <Link
-    to="/projects/2"
+  </WithStyles(ForwardRef(Tooltip))>
+  <WithStyles(ForwardRef(Tooltip))
+    title="Coming Soon!"
   >
     <div
       className="project_container"
@@ -41,9 +41,9 @@ exports[`Projects Component Projects component should match snapshot 1`] = `
         Venado Spec Home
       </label>
     </div>
-  </Link>
-  <Link
-    to="/projects/3"
+  </WithStyles(ForwardRef(Tooltip))>
+  <WithStyles(ForwardRef(Tooltip))
+    title="Coming Soon!"
   >
     <div
       className="project_container"
@@ -60,6 +60,6 @@ exports[`Projects Component Projects component should match snapshot 1`] = `
         Custom Kitchen Remodel
       </label>
     </div>
-  </Link>
+  </WithStyles(ForwardRef(Tooltip))>
 </section>
 `;
