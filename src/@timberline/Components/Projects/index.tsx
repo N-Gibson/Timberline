@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
+import { Tooltip } from '@material-ui/core'
 
 import purpleAster from '@timberline/assets/Purple_Aster.jpg'
 import venadoFront from '@timberline/assets/Venado_front.jpg'
@@ -12,7 +13,8 @@ interface ProjectsProps {}
 const Projects: React.FC<ProjectsProps> = () => {
   return (
     <section className="projects">
-      <Link to="/projects/1">
+      <Tooltip title="Coming Soon!">
+        {/* <Link to="/projects/1"> */}
         <div className="project_container">
           <img
             id="purple_aster"
@@ -22,8 +24,10 @@ const Projects: React.FC<ProjectsProps> = () => {
           />
           <label htmlFor="purple_aster">Purple Aster Spec Home</label>
         </div>
-      </Link>
-      <Link to="/projects/2">
+        {/* </Link> */}
+      </Tooltip>
+      <Tooltip title="Coming Soon!">
+        {/* <Link to="/projects/2"> */}
         <div className="project_container">
           <img
             id="venado_front"
@@ -33,8 +37,10 @@ const Projects: React.FC<ProjectsProps> = () => {
           />
           <label htmlFor="venado_front">Venado Spec Home</label>
         </div>
-      </Link>
-      <Link to="/projects/3">
+        {/* </Link> */}
+      </Tooltip>
+      <Tooltip title="Coming Soon!">
+        {/* <Link to="/projects/3"> */}
         <div className="project_container">
           <img
             id="venado_kitchen"
@@ -44,7 +50,8 @@ const Projects: React.FC<ProjectsProps> = () => {
           />
           <label htmlFor="venado_kitchen">Custom Kitchen Remodel</label>
         </div>
-      </Link>
+        {/* </Link> */}
+      </Tooltip>
     </section>
   )
 }
