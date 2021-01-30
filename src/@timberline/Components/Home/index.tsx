@@ -16,7 +16,11 @@ const Home: React.FC<HomeProps> = () => {
         <div className="banner">
           <ScrollAnimation animateIn="fadeIn">
             <div className="logo_text_background">
-              <img src={timberline_text_only} alt="timberline logo text"></img>
+              <img
+                id="timberline_text_only"
+                src={timberline_text_only}
+                alt="timberline logo text"
+              ></img>
             </div>
           </ScrollAnimation>
         </div>
