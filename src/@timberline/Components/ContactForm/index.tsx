@@ -9,6 +9,7 @@ import notify from '@timberline/notifications'
 import vm from '@timberline/formValidation/validationMessages'
 
 import './ContactForm.scss'
+import { useStyles } from './style'
 
 const ContactForm = () => {
   const formDefaults = {
@@ -22,6 +23,7 @@ const ContactForm = () => {
 
   const [form, setForm] = useState(formDefaults)
   const formRef = createRef()
+  const classes = useStyles()
 
   const setFormChange = (key: any) => ({ target: { value } }: any) => {
     setForm((prev) => ({ ...prev, [key]: value }))
@@ -70,6 +72,7 @@ const ContactForm = () => {
       ref={formRef as any}
     >
       <TextValidator
+        className={classes.formContent}
         name="name"
         validators={['required']}
         errorMessages={[vm.required]}
@@ -78,6 +81,7 @@ const ContactForm = () => {
         onChange={setFormChange('name')}
       />
       <TextValidator
+        className={classes.formContent}
         name="phone"
         type="number"
         validators={['required']}
@@ -87,6 +91,7 @@ const ContactForm = () => {
         onChange={setFormChange('phone')}
       />
       <TextValidator
+        className={classes.formContent}
         name="email"
         validators={['required', 'isEmail']}
         errorMessages={[vm.required, vm.email]}
@@ -105,7 +110,11 @@ const ContactForm = () => {
         error={form.descriptionError}
         onChange={setFormChange('description')}
       />
-      <Button type="submit" onClick={submitOnClick}>
+      <Button
+        className={classes.formContent}
+        type="submit"
+        onClick={submitOnClick}
+      >
         Submit
       </Button>
     </ValidatorForm>
