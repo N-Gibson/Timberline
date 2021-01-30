@@ -97,3 +97,21 @@
 #meet_owner_img {
   width: 30%;
 }
+
+@media screen and (max-width: 1850px) {
+  #timberline_text_only {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #timberline_text_only {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #timberline_text_only {
+    width: 600px;
+  }
+}
