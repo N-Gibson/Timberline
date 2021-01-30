@@ -24,6 +24,7 @@ exports[`Home Home component should match snapshot 1`] = `
         >
           <img
             alt="timberline logo text"
+            id="timberline_text_only"
             src="timberline_text_only.png"
           />
         </div>

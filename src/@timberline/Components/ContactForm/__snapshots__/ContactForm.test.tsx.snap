@@ -8,6 +8,7 @@ exports[`ContactForm should match the snapshot 1`] = `
   onSubmit={[Function]}
 >
   <TextValidator
+    className="makeStyles-formContent-1"
     errorMessages={
       Array [
         "This field is required",
@@ -25,6 +26,7 @@ exports[`ContactForm should match the snapshot 1`] = `
     value=""
   />
   <TextValidator
+    className="makeStyles-formContent-1"
     errorMessages={
       Array [
         "This field is required",
@@ -43,6 +45,7 @@ exports[`ContactForm should match the snapshot 1`] = `
     value=""
   />
   <TextValidator
+    className="makeStyles-formContent-1"
     errorMessages={
       Array [
         "This field is required",
@@ -73,6 +76,7 @@ exports[`ContactForm should match the snapshot 1`] = `
     variant="outlined"
   />
   <WithStyles(ForwardRef(Button))
+    className="makeStyles-formContent-1"
     onClick={[Function]}
     type="submit"
   >
