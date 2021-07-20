@@ -109,13 +109,13 @@ const ContactForm = () => {
         multiline
         variant="outlined"
         rows={5}
-        required={true}
         error={form.descriptionError}
         onChange={setFormChange('description')}
       />
       <Button
         className={`${classes.formContent} ${classes.submit}`}
         type="submit"
+        variant="outlined"
         onClick={submitOnClick}
       >
         Submit
