@@ -76,6 +76,7 @@ const ContactForm = () => {
         validators={['required']}
         errorMessages={[vm.required]}
         value={form.name}
+        variant="outlined"
         label="Name"
         onChange={setFormChange('name')}
       />
@@ -86,6 +87,7 @@ const ContactForm = () => {
         validators={['required']}
         errorMessages={[vm.required]}
         value={form.phone}
+        variant="outlined"
         label="Phone"
         onChange={setFormChange('phone')}
       />
@@ -95,6 +97,7 @@ const ContactForm = () => {
         validators={['required', 'isEmail']}
         errorMessages={[vm.required, vm.email]}
         value={form.email}
+        variant="outlined"
         label="Email"
         onChange={setFormChange('email')}
       />
