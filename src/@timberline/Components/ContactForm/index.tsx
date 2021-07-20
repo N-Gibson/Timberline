@@ -24,9 +24,11 @@ const ContactForm = () => {
   const formRef = createRef()
   const classes = useStyles()
 
-  const setFormChange = (key: any) => ({ target: { value } }: any) => {
-    setForm((prev) => ({ ...prev, [key]: value }))
-  }
+  const setFormChange =
+    (key: any) =>
+    ({ target: { value } }: any) => {
+      setForm((prev) => ({ ...prev, [key]: value }))
+    }
 
   const sendEmail = (e: any) => {
     e.preventDefault()
