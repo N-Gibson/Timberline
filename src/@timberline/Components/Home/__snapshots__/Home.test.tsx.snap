@@ -33,6 +33,78 @@ exports[`Home Home component should match snapshot 1`] = `
   </div>
   <section
     className="section_container"
+  >
+    <article
+      className="article_container"
+    >
+      <h2
+        className="article_header"
+      >
+        What we do:
+      </h2>
+      <h3
+        className="article_header"
+      >
+        Household and Commercial
+      </h3>
+      <ul
+        className="article_text"
+      >
+        <li>
+          Remodels
+        </li>
+        <li>
+          Additions
+        </li>
+        <li>
+          Framing
+        </li>
+        <li>
+          Drywall
+        </li>
+        <li>
+          Tile
+        </li>
+        <li>
+          Creative solutions
+        </li>
+      </ul>
+      <h3
+        className="article_header"
+      >
+        Outdoor
+      </h3>
+      <ul
+        className="article_text"
+      >
+        <li>
+          Landscaping
+        </li>
+        <li>
+          Patios
+        </li>
+        <li>
+          Portals
+        </li>
+        <li>
+          Decks
+        </li>
+      </ul>
+    </article>
+    <div
+      className="section_contact_form"
+    >
+      <h3>
+        Need help?
+      </h3>
+      <h2>
+        Contact Us!
+      </h2>
+      <ContactForm />
+    </div>
+  </section>
+  <section
+    className="section_container"
     id="home_center_main"
   >
     <article
