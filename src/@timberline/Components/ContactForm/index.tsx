@@ -8,7 +8,6 @@ import { Button, TextField } from '@material-ui/core'
 import notify from '@timberline/notifications'
 import vm from '@timberline/formValidation/validationMessages'
 
-import './ContactForm.scss'
 import { useStyles } from './style'
 
 const ContactForm = () => {
@@ -100,6 +99,7 @@ const ContactForm = () => {
         onChange={setFormChange('email')}
       />
       <TextField
+        className={classes.description}
         label="Description"
         placeholder="Please include a brief description of the work required here:"
         value={form.description}
@@ -111,7 +111,7 @@ const ContactForm = () => {
         onChange={setFormChange('description')}
       />
       <Button
-        className={classes.formContent}
+        className={`${classes.formContent} ${classes.submit}`}
         type="submit"
         onClick={submitOnClick}
       >
