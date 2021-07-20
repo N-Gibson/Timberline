@@ -8,7 +8,6 @@ import { Button, TextField } from '@material-ui/core'
 import notify from '@timberline/notifications'
 import vm from '@timberline/formValidation/validationMessages'
 
-import './ContactForm.scss'
 import { useStyles } from './style'
 
 const ContactForm = () => {
@@ -25,9 +24,11 @@ const ContactForm = () => {
   const formRef = createRef()
   const classes = useStyles()
 
-  const setFormChange = (key: any) => ({ target: { value } }: any) => {
-    setForm((prev) => ({ ...prev, [key]: value }))
-  }
+  const setFormChange =
+    (key: any) =>
+    ({ target: { value } }: any) => {
+      setForm((prev) => ({ ...prev, [key]: value }))
+    }
 
   const sendEmail = (e: any) => {
     e.preventDefault()
@@ -77,6 +78,7 @@ const ContactForm = () => {
         validators={['required']}
         errorMessages={[vm.required]}
         value={form.name}
+        variant="outlined"
         label="Name"
         onChange={setFormChange('name')}
       />
@@ -87,6 +89,7 @@ const ContactForm = () => {
         validators={['required']}
         errorMessages={[vm.required]}
         value={form.phone}
+        variant="outlined"
         label="Phone"
         onChange={setFormChange('phone')}
       />
@@ -96,23 +99,25 @@ const ContactForm = () => {
         validators={['required', 'isEmail']}
         errorMessages={[vm.required, vm.email]}
         value={form.email}
+        variant="outlined"
         label="Email"
         onChange={setFormChange('email')}
       />
       <TextField
+        className={classes.description}
         label="Description"
         placeholder="Please include a brief description of the work required here:"
         value={form.description}
         multiline
         variant="outlined"
         rows={5}
-        required={true}
         error={form.descriptionError}
         onChange={setFormChange('description')}
       />
       <Button
-        className={classes.formContent}
+        className={`${classes.formContent} ${classes.submit}`}
         type="submit"
+        variant="outlined"
         onClick={submitOnClick}
       >
         Submit

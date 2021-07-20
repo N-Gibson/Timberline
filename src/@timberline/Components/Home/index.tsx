@@ -4,6 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import purpleAster from '@timberline/assets/Purple_Aster.jpg'
 import profile from '@timberline/assets/profile.jpg'
 import timberline_text_only from '@timberline/assets/timberline_text_only.png'
+import { ContactForm } from '@timberline/Components'
 
 import './Home.scss'
 
@@ -25,6 +26,32 @@ const Home: React.FC<HomeProps> = () => {
           </ScrollAnimation>
         </div>
       </div>
+      <section className="section_container">
+        <article className="article_container">
+          <h2 className="article_header">What we do:</h2>
+          <h3 className="article_header">Household and Commercial</h3>
+          <ul className="article_text">
+            <li>Remodels</li>
+            <li>Additions</li>
+            <li>Framing</li>
+            <li>Drywall</li>
+            <li>Tile</li>
+            <li>Creative solutions</li>
+          </ul>
+          <h3 className="article_header">Outdoor</h3>
+          <ul className="article_text">
+            <li>Landscaping</li>
+            <li>Patios</li>
+            <li>Portals</li>
+            <li>Decks</li>
+          </ul>
+        </article>
+        <div className="section_contact_form">
+          <h3>Need help?</h3>
+          <h2>Contact Us!</h2>
+          <ContactForm />
+        </div>
+      </section>
       <section id="home_center_main" className="section_container">
         <article className="article_container">
           <h2 className="article_header">Raise, Repair, Remodel</h2>

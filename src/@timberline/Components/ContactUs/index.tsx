@@ -9,10 +9,11 @@ interface ContactUsProps {}
 const ContactUs: React.FC<ContactUsProps> = () => {
   return (
     <div className="contactUs_container">
+      <h2>Interested in having some work done?</h2>
+      <h3>Get in touch with us to schedule a quote!</h3>
       <section className="contactUs">
         <article>
-          <h3>Interested in having some work done?</h3>
-          <h2>Get in touch with us for a free quote!</h2>
+          <h2>Contact Us</h2>
           <p>
             At Timberline Inc., we take pride in customer service above all
             else! Reach out to us with your basic contact information as well as
