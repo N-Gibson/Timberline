@@ -24,6 +24,7 @@ exports[`ContactForm should match the snapshot 1`] = `
       ]
     }
     value=""
+    variant="outlined"
   />
   <TextValidator
     className="makeStyles-formContent-1"
@@ -43,6 +44,7 @@ exports[`ContactForm should match the snapshot 1`] = `
       ]
     }
     value=""
+    variant="outlined"
   />
   <TextValidator
     className="makeStyles-formContent-1"
@@ -63,22 +65,24 @@ exports[`ContactForm should match the snapshot 1`] = `
       ]
     }
     value=""
+    variant="outlined"
   />
   <WithStyles(ForwardRef(TextField))
+    className="makeStyles-description-2"
     error={false}
     label="Description"
     multiline={true}
     onChange={[Function]}
     placeholder="Please include a brief description of the work required here:"
-    required={true}
     rows={5}
     value=""
     variant="outlined"
   />
   <WithStyles(ForwardRef(Button))
-    className="makeStyles-formContent-1"
+    className="makeStyles-formContent-1 makeStyles-submit-3"
     onClick={[Function]}
     type="submit"
+    variant="outlined"
   >
     Submit
   </WithStyles(ForwardRef(Button))>

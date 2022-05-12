@@ -7,6 +7,13 @@ export const useStyles = makeStyles(() => ({
     '& div': {
       display: 'flex',
       'align-items': 'center',
+      'margin-bottom': '20px'
     },
   },
+  description: {
+    width: '100%'
+  },
+  submit: {
+    height: '40px'
+  }
 }))
