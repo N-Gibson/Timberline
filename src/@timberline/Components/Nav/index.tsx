@@ -47,7 +47,7 @@ const Nav: React.FC<NavProps> = () => {
     contact_us: 3,
   }
 
-  const [activeTab, setActiveTab] = useState(
+  const [activeTab = 0, setActiveTab] = useState(
     tabIndexToName[
       history?.location?.pathname?.slice(1) as keyof TabIndexToNameProps
     ],
