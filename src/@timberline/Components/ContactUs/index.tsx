@@ -9,8 +9,10 @@ interface ContactUsProps {}
 const ContactUs: React.FC<ContactUsProps> = () => {
   return (
     <div className="contactUs_container">
-      <h2>Interested in having some work done?</h2>
-      <h3>Get in touch with us to schedule a quote!</h3>
+      <div className="contactUs_header_container">
+        <h2>Interested in having some work done?</h2>
+        <h3>Get in touch with us to schedule a quote!</h3>
+      </div>
       <section className="contactUs">
         <article>
           <h2>Contact Us</h2>
