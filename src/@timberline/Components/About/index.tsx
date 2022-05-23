@@ -45,7 +45,7 @@ const About: React.FC<AboutProps> = () => {
           <ul className="bucket_list_ul">
             <li>Work on a home from the 1800's</li>
             <li>Build a cabin in Alaska</li>
-            <li>Design and build a liveable tree house </li>
+            <li>Design and build a liveable tree house</li>
           </ul>
         </article>
       </section>
