@@ -19,8 +19,8 @@ const About: React.FC<AboutProps> = () => {
           <p className="about_article_text">
             Timberline Inc. was founded in 1995 with the goals of creating
             quality solutions in the housing market. It has evolved into a
-            company that can do a bit of everything. Etc... this narrative will
-            need some work.
+            company that can do a bit of everything. We take pride in creative 
+            problem solving for dynamic construction and repair needs.
           </p>
           <img
             className="about_main_image"
@@ -45,7 +45,7 @@ const About: React.FC<AboutProps> = () => {
           <ul className="bucket_list_ul">
             <li>Work on a home from the 1800's</li>
             <li>Build a cabin in Alaska</li>
-            <li>Design and build a liveable tree house </li>
+            <li>Design and build a liveable tree house</li>
           </ul>
         </article>
       </section>
